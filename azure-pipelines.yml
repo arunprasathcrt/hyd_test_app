@@ -1,0 +1,62 @@
+trigger:
+  branches:
+    include:
+      - feature/hydrogen-typescript
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+
+  # ============================================================
+  # 1. Checkout source code
+  # ============================================================
+  - checkout: self
+    clean: true
+    displayName: 'Checkout Source Code'
+
+
+  # ============================================================
+  # 2. Install Node.js
+  # ============================================================
+  - task: NodeTool@0
+    displayName: 'Install Node.js 20'
+    inputs:
+      versionSpec: '20.x'
+
+
+  # ============================================================
+  # 3. Display versions
+  # Useful for troubleshooting pipeline issues
+  # ============================================================
+  - script: |
+      node --version
+      npm --version
+    displayName: 'Check Node and npm Versions'
+
+
+  # ============================================================
+  # 4. Install project dependencies
+  # ============================================================
+  - script: |
+      npm ci
+    displayName: 'Install Dependencies'
+
+
+  # ============================================================
+  # 5. Build Hydrogen application
+  # ============================================================
+  - script: |
+      npm run build
+    displayName: 'Build Hydrogen Application'
+
+
+  # ============================================================
+  # 6. Deploy Hydrogen to Shopify Oxygen
+  # ============================================================
+  - script: |
+      npx shopify hydrogen deploy \
+        --token "$SHOPIFY_HYDROGEN_DEPLOYMENT_TOKEN"
+    displayName: 'Deploy Hydrogen to Oxygen Preview'
+    env:
+      SHOPIFY_HYDROGEN_DEPLOYMENT_TOKEN: $(SHOPIFY_HYDROGEN_DEPLOYMENT_TOKEN)

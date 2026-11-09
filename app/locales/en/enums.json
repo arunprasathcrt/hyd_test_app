@@ -1,0 +1,75 @@
+{
+  "roleTag": {
+    "rep": "Sales",
+    "art": "Art Production",
+    "creative": "Art Production",
+    "licensing": "Licensing",
+    "finance": "Finance",
+    "customer": "Customer",
+    "admin": "Admin",
+    "superadmin": "Super Admin"
+  },
+  "userType": {
+    "internal": "Internal",
+    "external": "External"
+  },
+  "segment": {
+    "golf": "Golf",
+    "resort": "Resort",
+    "bookstore": "Bookstore",
+    "university": "University",
+    "retail": "Retail",
+    "military": "Military",
+    "corporate": "Corporate"
+  },
+  "orderStatus": {
+    "fulfilled": "Fulfilled",
+    "processing": "Processing",
+    "pending": "Pending",
+    "cancelled": "Cancelled"
+  },
+  "orderPaymentStatus": {
+    "paid": "Paid",
+    "due": "Due soon",
+    "pastDue": "Past due",
+    "held": "Held · credit"
+  },
+  "invoiceStatus": {
+    "paid": "Paid",
+    "due": "Due",
+    "overdue": "Overdue"
+  },
+  "brand": {
+    "ua": "Under Armour",
+    "champion": "Champion",
+    "other": "Other"
+  },
+  "decorationMethod": {
+    "embroidery": "Embroidery",
+    "screen_print": "Screen print"
+  },
+  "artPlacement": {
+    "match": "Match source garment art placement"
+  },
+  "processCode": {
+    "none": "Not set",
+    "P1": "P1 · 1 colour on white",
+    "P2": "P2 · 2 colours on white",
+    "P3": "P3 · 3 colours on white",
+    "P4": "P4 · 4 colours on white",
+    "X1": "X1 · 1 colour with base on dark",
+    "X2": "X2 · 2 colours with base on dark",
+    "X3": "X3 · 3 colours with base on dark",
+    "X4": "X4 · 4 colours with base on dark"
+  },
+  "referType": {
+    "none": "Nothing yet",
+    "art": "An existing art number",
+    "file": "An uploaded file"
+  },
+  "artistChoice": {
+    "colour-coordinate": "Colour-coordinate to the garment",
+    "team-colours": "Match the team colours",
+    "artist-decides": "The artist decides"
+  }
+}

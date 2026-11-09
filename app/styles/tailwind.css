@@ -1,0 +1,261 @@
+/**
+ * Configure Tailwind v4 in this file using CSS variables and directives:
+ * https://tailwindcss.com/docs/v4-beta#css-first-configuration
+ */
+
+@import 'tailwindcss';
+@import './tokens.css';
+
+@keyframes mfAtpIn {
+  from {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/**
+ * UTDS tokens → Tailwind utilities.
+ *
+ * Tailwind v4 is CSS-first, so this `@theme` block is the v4 equivalent of the
+ * `tailwind.config.ts` `theme.extend` that CLAUDE.md's Visual Fidelity Rule 5
+ * calls for. `inline` makes the generated utilities reference the
+ * `--utds-*` custom properties rather than copying their values, so
+ * `app/styles/tokens.css` stays the single source of truth.
+ *
+ * Only tokens that utilities are actually needed for are mapped. A token that
+ * exists in `tokens.css` but not here is still reachable as `var(--utds-*)`
+ * from a component stylesheet.
+ */
+
+@theme inline {
+  /* Fonts */
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  /* Surfaces */
+  --color-utds-raised: var(--utds-surface-raised);
+  --color-utds-page: var(--utds-surface-page);
+  --color-utds-hover: var(--utds-surface-hover);
+  --color-utds-sunken: var(--utds-surface-sunken);
+  --color-utds-muted-surface: var(--utds-surface-muted);
+
+  /* Borders */
+  --color-utds-border-subtle: var(--utds-border-subtle);
+  --color-utds-border-default: var(--utds-border-default);
+  --color-utds-border-table: var(--utds-border-table);
+  --color-utds-border-row: var(--utds-border-row);
+  --color-utds-border-dashed: var(--utds-border-dashed);
+  --color-utds-border-strong: var(--utds-border-strong);
+
+  /* Text ramp */
+  --color-utds-primary: var(--utds-text-primary);
+  --color-utds-ink: var(--utds-text-ink);
+  --color-utds-strong: var(--utds-text-strong);
+  --color-utds-body: var(--utds-text-body);
+  --color-utds-secondary: var(--utds-text-secondary);
+  --color-utds-tertiary: var(--utds-text-tertiary);
+  --color-utds-muted: var(--utds-text-muted);
+  --color-utds-placeholder: var(--utds-text-placeholder);
+  --color-utds-inverse: var(--utds-text-inverse);
+
+  /* Accent + status */
+  --color-utds-charcoal: var(--utds-accent-charcoal);
+  --color-utds-gold: var(--utds-accent-gold);
+  --color-utds-success: var(--utds-status-success);
+  --color-utds-info: var(--utds-status-info);
+  --color-utds-warning: var(--utds-status-warning);
+
+  /* Actions */
+  --color-utds-action-primary-hover: var(--utds-action-primary-hover);
+  --color-utds-action-soft: var(--utds-action-soft);
+  --color-utds-action-soft-hover: var(--utds-action-soft-hover);
+  --color-utds-action-danger: var(--utds-action-danger);
+  --color-utds-action-danger-hover: var(--utds-action-danger-hover);
+  --color-utds-action-success-bg: var(--utds-action-success-bg);
+  --color-utds-action-success-border: var(--utds-action-success-border);
+  --color-utds-action-success-fg: var(--utds-action-success-fg);
+  --color-utds-disabled: var(--utds-text-disabled);
+
+  /* Callouts */
+  --color-utds-callout-info-bg: var(--utds-callout-info-bg);
+  --color-utds-callout-info-border: var(--utds-callout-info-border);
+  --color-utds-callout-info-fg: var(--utds-callout-info-fg);
+  --color-utds-callout-warning-bg: var(--utds-callout-warning-bg);
+  --color-utds-callout-warning-border: var(--utds-callout-warning-border);
+  --color-utds-callout-warning-fg: var(--utds-callout-warning-fg);
+  --color-utds-callout-success-bg: var(--utds-callout-success-bg);
+  --color-utds-callout-success-border: var(--utds-callout-success-border);
+  --color-utds-callout-success-fg: var(--utds-callout-success-fg);
+
+  /* Radii */
+  --radius-utds-sm: var(--utds-radius-sm);
+  --radius-utds-md: var(--utds-radius-md);
+  --radius-utds-lg: var(--utds-radius-lg);
+  --radius-utds-xl: var(--utds-radius-xl);
+  --radius-utds-2xl: var(--utds-radius-2xl);
+  --radius-utds-pill: var(--utds-radius-pill);
+
+  /* Shadows */
+  --shadow-utds-card-hover: var(--utds-shadow-card-hover);
+  --shadow-utds-cta-hover: var(--utds-shadow-cta-hover);
+
+  /* Motion */
+  --ease-utds-standard: var(--utds-ease-standard);
+
+  /* ----------------------------------------------------------------
+     Products catalog (`mf-*`) — see the matching block in tokens.css
+  ---------------------------------------------------------------- */
+  --font-catalog: "Inter", sans-serif;
+  --font-editorial: "Playfair Display", Georgia, serif;
+
+  --color-mf-bg: var(--mf-bg);
+  --color-mf-surface: var(--mf-surface);
+  --color-mf-surface-2: var(--mf-surface-2);
+  --color-mf-border: var(--mf-border);
+  --color-mf-border-2: var(--mf-border-2);
+  --color-mf-line: var(--mf-line);
+  --color-mf-ink: var(--mf-ink);
+  --color-mf-ink-2: var(--mf-ink-2);
+  --color-mf-ink-3: var(--mf-ink-3);
+  --color-mf-ink-4: var(--mf-ink-4);
+  --color-mf-gold: var(--mf-gold);
+  --color-mf-gold-deep: var(--mf-gold-deep);
+  --color-mf-gold-soft: var(--mf-gold-soft);
+  --color-mf-gold-line: var(--mf-gold-line);
+  --color-mf-teal: var(--mf-teal);
+  --color-mf-teal-soft: var(--mf-teal-soft);
+  --color-mf-terra: var(--mf-terra);
+  --color-mf-green: var(--mf-green);
+  --color-mf-lead: var(--mf-lead);
+  --color-mf-primary: var(--mf-primary);
+  --color-mf-primary-dark: var(--mf-primary-dark);
+
+  --radius-mf-sm: var(--mf-r-sm);
+  --radius-mf-md: var(--mf-r-md);
+  --radius-mf-lg: var(--mf-r-lg);
+  --radius-mf-pill: var(--mf-pill);
+
+  --shadow-mf-1: var(--mf-sh1);
+  --shadow-mf-2: var(--mf-sh2);
+  --shadow-mf-3: var(--mf-sh3);
+}
+
+/* Products page layout and brand rail, matched to the attached DTX prototype. */
+.mf-root {
+  --mf-gold-deep: #9a6c2a;
+  position: relative;
+}
+
+.mf-root .mf-tb0 {
+  flex-wrap: nowrap;
+  gap: 12px;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+
+.mf-root .mf-tb0 .k {
+  white-space: nowrap;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .16em;
+}
+
+.mf-root .mf-brands {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 2px 0;
+  mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent);
+}
+
+.mf-root .mf-brands::-webkit-scrollbar { display: none; }
+
+.mf-root .mf-bt {
+  flex: 0 0 auto;
+  min-height: 56px;
+  border-radius: 12px;
+  box-shadow: var(--mf-sh1);
+  transition: border-color .14s, background .14s, transform .14s, box-shadow .14s;
+}
+
+.mf-root .mf-bt:hover { border-color: var(--mf-ink-3); transform: translateY(-1px); }
+.mf-root .mf-bt .nm { font-size: 13.5px; font-weight: 800; letter-spacing: .02em; text-transform: uppercase; line-height: 1.15; }
+.mf-root .mf-bt .ct { font-size: 11px; color: var(--mf-ink-3); font-weight: 500; }
+.mf-root .mf-bt.on:not(.has-lg) { background: #1a1a1a; border-color: #1a1a1a; color: #fff; box-shadow: 0 6px 18px rgba(20,19,15,.18); }
+.mf-root .mf-bt.on:not(.has-lg) .ct { color: rgba(255,255,255,.72); }
+.mf-root .mf-bt.has-lg { min-width: 150px; min-height: 56px; padding: 6px 18px 5px; gap: 3px; align-items: center; text-align: center; }
+.mf-root .mf-bt.has-lg .nm { display: none; }
+.mf-root .mf-bt.has-lg .ct { font-size: 10.5px; letter-spacing: .02em; }
+.mf-root .mf-bt.has-lg.on { background: #fff; border-color: #1a1a1a; box-shadow: inset 0 0 0 1px #1a1a1a, 0 6px 18px rgba(20,19,15,.10); color: #111113; }
+.mf-root .mf-bt.has-lg.on .ct { color: #5c5c61; }
+.mf-root .mf-bt:focus-visible { outline: 2px solid #1a1a1a; outline-offset: 2px; }
+
+.mf-root .utx-lg { display: flex; align-items: center; justify-content: center; height: 26px; max-width: 196px; line-height: 1; }
+.mf-root .utx-lg svg { display: block; height: 22px; width: auto; max-width: 196px; }
+.mf-root .utx-lg.ua svg { height: auto; width: 190px; max-height: 24px; }
+.mf-root .utx-lg.ch svg { height: 24px; }
+.mf-root .utx-lg.lu svg { height: 20px; }
+.mf-root .utx-lg.gs { height: 28px; }
+.mf-root .utx-lg.gs svg { height: 28px; width: auto; max-width: 96px; }
+.mf-root .mf-bt.has-lg .utx-lg { filter: grayscale(1) brightness(0); opacity: .5; transition: opacity .16s, filter .16s; }
+.mf-root .mf-bt.has-lg:hover .utx-lg,
+.mf-root .mf-bt.has-lg:focus-visible .utx-lg,
+.mf-root .mf-bt.has-lg.on .utx-lg { filter: none; opacity: 1; }
+.mf-root .mf-bt.has-lg:hover { border-color: #1a1a1a; }
+
+.mf-root.utx-railed .utx-main-col { flex: 1 1 auto; min-width: 0; padding-right: 22px; }
+.mf-root.utx-railed .utx-main-col .mf-grid { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+.mf-root.utx-railed.dens-k .utx-main-col .mf-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+.mf-root .mf-card.sel { border-color: var(--mf-gold); box-shadow: 0 0 0 2px var(--mf-gold), var(--mf-sh2); }
+.mf-root .mf-card-img { background: linear-gradient(150deg, #fbf7ee, #f1eee6); }
+.mf-root .mf-card-img img { width: 100%; height: 100%; object-fit: cover; }
+.mf-root .mf-card.art .mf-card-img { background: linear-gradient(150deg, #f3f1ec, #e7e4dc); }
+.mf-root .mf-card.art .mf-card-img img { object-fit: contain; padding: 14px; }
+
+.mf-root .utx-rail { align-self: flex-start; box-sizing: border-box; z-index: 30; }
+.mf-root .utx-rail-h { flex: 0 0 auto; padding: 14px 14px 10px 18px; }
+.mf-root .utx-rail-h .k { font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--mf-gold-deep); }
+.mf-root .utx-rail-h button { width: 36px; height: 36px; border-radius: 50%; }
+.mf-root .utx-rail-b { flex: 1 1 auto; min-height: 0; overflow-x: hidden; padding: 14px 18px 22px; scrollbar-width: thin; }
+.mf-root .utx-cat-head h1 { margin: 0; font: 600 24px/1.1 'Playfair Display', Georgia, serif; }
+.mf-root .utx-rail-b > section { padding-top: 14px; border-top: 1px solid var(--mf-line); }
+.mf-root.utx-rail-closed .utx-rail { width: 56px; }
+.mf-root.utx-rail-closed .utx-rail-h { justify-content: center; padding: 14px 8px 10px; }
+.mf-root.utx-rail-closed .utx-rail-mini { display: flex; }
+
+@media (min-width: 1700px) { .mf-root .utx-rail { width: 368px; } }
+@media (max-width: 1240px) {
+  .mf-root.utx-railed { flex-direction: column; }
+  .mf-root.utx-railed .utx-main-col { order: 2; width: 100%; padding-right: 0; }
+  .mf-root .utx-rail { position: static; order: 1; height: auto; width: 100%; border-left: 0; background: transparent; }
+  .mf-root .utx-rail-h { padding: 10px 4px 8px; }
+  .mf-root .utx-rail-b { padding: 10px 4px 16px; overflow: visible; }
+  .mf-root.utx-rail-closed .utx-rail { width: 100%; }
+  .mf-root.utx-rail-closed .utx-rail-h { justify-content: space-between; padding: 10px 4px 8px; }
+  .mf-root.utx-rail-closed .utx-rail-mini { display: none; }
+}
+@media (max-width: 700px) {
+  .mf-root .mf-bt.has-lg { min-width: 120px; }
+  .mf-root .utx-lg, .mf-root .utx-lg svg { max-width: 140px; }
+  .mf-root .utx-lg.ua svg { width: 140px; }
+  .mf-root.utx-railed .utx-main-col .mf-grid,
+  .mf-root.utx-railed.dens-k .utx-main-col .mf-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}
+
+/* ============================================================
+   GLOBAL TYPOGRAPHY
+   ============================================================ */
+
+html,
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Playfair Display — use explicitly for display/headline content */
+.font-serif {
+  font-family: "Playfair Display", Georgia, serif;
+}

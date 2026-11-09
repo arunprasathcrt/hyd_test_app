@@ -1,0 +1,253 @@
+/* Login Page Design System Tokens */
+
+:root {
+  /* Colors */
+  --color-brand-primary: #18181b;
+  --color-brand-accent: #dc2626;
+  --color-surface-page: #f4f4f5;
+  --color-surface-card: #ffffff;
+  --color-surface-muted: #fafafa;
+  --color-border-subtle: #e4e4e7;
+  --color-text-primary: #18181b;
+  --color-text-secondary: #52525b;
+  --color-text-on-brand: #ffffff;
+
+  /* Spacing */
+  --space-xs: 6px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 20px;
+  --space-2xl: 24px;
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  /* Shadows */
+  --shadow-card: 0px 0px 1px 0px rgba(24, 24, 27, 0.3), 0px 4px 8px 0px rgba(24, 24, 27, 0.1);
+}
+
+html.login-page,
+html.login-page body,
+html.login-page #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-surface-page);
+}
+
+.login-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-surface-page);
+  display: flex;
+  flex-direction: row;
+}
+
+.login-left-panel {
+  display: none;
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  background-color: #000;
+}
+
+@media (min-width: 1024px) {
+  .login-left-panel {
+    display: block;
+  }
+}
+
+.login-left-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  z-index: 0;
+}
+
+.login-left-panel img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.login-right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 48px 16px;
+  overflow-y: auto;
+}
+
+@media (min-width: 1024px) {
+  .login-right-panel {
+    width: 706px;
+    flex-shrink: 0;
+  }
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  align-items: center;
+  overflow: hidden;
+  padding: var(--space-2xl);
+  border-radius: var(--radius-md);
+  width: 100%;
+  max-width: 420px;
+  background-color: var(--color-surface-card);
+  box-shadow: var(--shadow-card);
+}
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  width: 100%;
+}
+
+.login-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  text-align: center;
+}
+
+.login-subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-text-secondary);
+}
+
+.login-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  align-items: center;
+  width: 100%;
+}
+
+.login-option {
+  border-radius: var(--radius-sm);
+  width: 100%;
+  background-color: var(--color-surface-muted);
+}
+
+.login-option-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  align-items: center;
+  padding: var(--space-md);
+  width: 100%;
+}
+
+.login-option-label {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  width: 100%;
+  color: var(--color-text-primary);
+}
+
+/* Replaced by Button variant="default" size="default" shape="square" className="w-full rounded"
+.login-option-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  height: 40px;
+  width: 100%;
+  padding: 0 var(--space-lg);
+  border-radius: var(--radius-sm);
+  transition: opacity 0.2s;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  background-color: var(--color-brand-primary);
+  color: var(--color-text-on-brand);
+}
+
+.login-option-button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.login-option-button:active:not(:disabled) {
+  opacity: 0.8;
+}
+
+.login-option-button:focus-visible {
+  outline: 2px solid var(--color-brand-primary);
+  outline-offset: 2px;
+}
+
+.login-option-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+*/
+
+.login-button-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.login-button-text {
+  font-size: 14px;
+  line-height: 20px;
+  flex: 1;
+  min-width: 0;
+}
+
+.login-divider {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+  width: 100%;
+}
+
+.login-divider-line {
+  flex: 1;
+  height: 1px;
+  min-width: 1px;
+  background-color: var(--color-border-subtle);
+}
+
+.login-divider-text {
+  font-size: 14px;
+  line-height: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  color: var(--color-text-secondary);
+}
+
+/* 🔧 SUGGESTED — not in the V63 prototype. Renders the auth failure that
+   `/login?error=…` carries, using the existing text ramp and accent token so
+   nothing new is introduced to the design system. Remove together with the
+   `.login-error` paragraph in LoginLayout.tsx to return to a byte-identical
+   screen. */
+.login-error {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--color-brand-accent);
+}

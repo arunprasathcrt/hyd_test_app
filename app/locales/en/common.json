@@ -1,0 +1,96 @@
+{
+  "app": {
+    "name": "Unrivaled Teamwear"
+  },
+  "navigation": {
+    "ariaLabel": "Primary navigation",
+    "brand": "Unrivaled",
+    "groups": {
+      "workspace": "WORKSPACE",
+      "sales": "SALES",
+      "artDesign": "ART DESIGN",
+      "artProduction": "ART PRODUCTION",
+      "licensing": "LICENSING",
+      "finance": "FINANCE",
+      "general": "GENERAL"
+    },
+    "items": {
+      "startHere": "Start Here",
+      "home": "Home",
+      "accounts": "My Accounts",
+      "products": "Products",
+      "catalogs": "Catalogs",
+      "orders": "Orders",
+      "artDesign": "Art Design",
+      "buildSpectrum": "Build in Spectrum",
+      "createWithAi": "Create with AI",
+      "myRenders": "My renders",
+      "presentations": "Presentations",
+      "draftOrders": "Draft Orders",
+      "commissions": "Commissions",
+      "forecast": "Forecast",
+      "designQueue": "Design Queue",
+      "createArt": "Create art",
+      "artQueue": "Art Production Queue",
+      "commandCenter": "Command Center",
+      "productionDashboard": "Production dashboard",
+      "licenseQueue": "License Queue",
+      "licensingDatabase": "Licensing database",
+      "financeAccounts": "Accounts",
+      "ordersAr": "Orders · AR",
+      "notifications": "Notifications",
+      "settings": "Settings"
+    },
+    "quickSearch": "Quick search…",
+    "openMenu": "Open navigation menu",
+    "you": "You",
+    "help": "Help center",
+    "user": "Admin User",
+    "role": "Administrator"
+  },
+  "header": {
+    "globalView": "Global view",
+    "help": "Replay guided tour",
+    "notifications": "Notifications",
+    "new": "New",
+    "switch": "Switch",
+    "logOut": "Log out"
+  },
+  "newCta": {
+    "title": "What do you need?",
+    "subtitle": "Start a draft order or a presentation.",
+    "draftOrder": {
+      "title": "New draft order",
+      "description": "Lines, art and royalty in one builder"
+    },
+    "presentation": {
+      "title": "Create a presentation",
+      "description": "Render mockups with Create with AI"
+    }
+  },
+  "toast": {
+    "close": "Close notification"
+  },
+  "calendar": {
+    "navigation": "Calendar navigation",
+    "previousMonth": "Previous month",
+    "nextMonth": "Next month",
+    "caption": "{{value, date(month: long; year: numeric)}}",
+    "month": "{{value, date(month: long)}}",
+    "year": "{{value, date(year: numeric)}}",
+    "weekday": "{{value, date(weekday: long)}}",
+    "weekdayShort": "{{value, date(weekday: narrow)}}",
+    "day": {
+      "default": "{{value, date(dateStyle: full)}}",
+      "today": "Today, {{value, date(dateStyle: full)}}",
+      "selected": "{{value, date(dateStyle: full)}}, selected",
+      "todaySelected": "Today, {{value, date(dateStyle: full)}}, selected"
+    }
+  },
+  "format": {
+    "count": "{{value, number}}",
+    "money": "{{value, currency(maximumFractionDigits: 0)}}",
+    "percent": "{{value, percent(maximumFractionDigits: 0)}}",
+    "date": "{{value, date}}"
+  }
+}

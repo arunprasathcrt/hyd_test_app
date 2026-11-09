@@ -1,0 +1,223 @@
+{
+  "page": {
+    "title": "Presentations",
+    "description": "Everything you have built for customers. Open one to edit, share or send it."
+  },
+  "form": {
+    "pending": "Creating..."
+  },
+  "actions": {
+    "groupLabel": "Presentation actions",
+    "openProducts": "Open Products",
+    "newPresentation": "New presentation",
+    "cancel": "Cancel",
+    "customizeWithAi": "Customize with AI",
+    "createPresentation": "Create presentation",
+    "close": "Close"
+  },
+  "search": {
+    "label": "Search presentations",
+    "placeholder": "Search presentations, customers, styles, SKUs, art numbers…",
+    "clear": "Clear the search",
+    "shortcut": "/",
+    "searchPill": "Search"
+  },
+  "filters": {
+    "groupLabel": "Filter presentations",
+    "activeFilters": "Active filters",
+    "customer": "Customer",
+    "status": "Status",
+    "rep": "Rep",
+    "clearAll": "Clear filters",
+    "done": "Done",
+    "statusOptions": {
+      "unsent": "Not sent yet",
+      "unopened": "Sent, not opened",
+      "opened": "Opened by the customer",
+      "changes": "Changes requested",
+      "nodraft": "Approved, no draft order yet",
+      "drafted": "Draft order made",
+      "closed": "Closed"
+    }
+  },
+  "segments": {
+    "label": "Show",
+    "all": "All",
+    "drafts": "Drafts",
+    "withCustomer": "With customer",
+    "needsUs": "Needs us",
+    "approved": "Approved",
+    "closed": "Closed"
+  },
+  "count": {
+    "single": "{{count}} presentation",
+    "multiple": "{{count}} presentations"
+  },
+  "sort": {
+    "label": "Sort",
+    "recentlyUpdated": "Recently updated",
+    "neededBy": "Needed by",
+    "name": "Name A to Z",
+    "customer": "Customer"
+  },
+  "density": {
+    "label": "Grid density",
+    "comfortable": "Comfortable grid",
+    "compact": "Compact grid"
+  },
+  "status": {
+    "draft": "Draft",
+    "withCustomer": "With customer",
+    "needsUs": "Needs us",
+    "approved": "Approved",
+    "closed": "Closed"
+  },
+  "grid": {
+    "label": "Presentations"
+  },
+  "card": {
+    "approval": "Approval",
+    "share": "Share",
+    "open": "Open",
+    "noPreview": "No preview",
+    "updated": "Updated {{time}}",
+    "styles": "{{count}} styles",
+    "styleSingle": "style",
+    "styleMultiple": "styles",
+    "neededBy": "needed by",
+    "preview": "Preview",
+    "workflow": {
+      "draft": "Not sent yet",
+      "withCustomer": "Not opened yet",
+      "needsUs": "Changes requested",
+      "approved": "Approved, no draft order yet",
+      "closed": "Closed"
+    }
+  },
+  "modal": {
+    "description": "Name it, pick the customer and the date. Build it with Create with AI, or send the styles as they are.",
+    "emptyState": "No styles yet. Create it empty, then add styles from Products.",
+    "name": "Name",
+    "customer": "Customer",
+    "neededBy": "Needed by",
+    "buildMethod": "How do you want to build it?",
+    "recommended": "Recommended",
+    "customizeWithAi": "Customize with AI",
+    "customizeWithAiDescription": "Place the art, size it and render every garment in Create with AI.",
+    "stylesAsTheyAre": "Styles as they are",
+    "stylesAsTheyAreDescription": "An empty draft that opens here, ready for styles from Products.",
+    "customerMeta": "Tier {{tier}} • {{segment}} • Contact {{contact}}",
+    "draftCreated": "Draft created. Add styles from Products.",
+    "addStyles": "Add styles",
+    "createFailed": "Unable to create the presentation.",
+    "defaultCollectionSuffix": "collection"
+  },
+  "empty": {
+    "title": "No presentations found",
+    "description": "Try adjusting your search or filters."
+  },
+  "detail": {
+    "breadcrumb": "Breadcrumb",
+    "toast": {
+      "customer": "Customer set to {{name}}.",
+      "neededBy": "Needed by {{date}}.",
+      "neededByCleared": "Needed-by date cleared."
+    },
+    "notFound": {
+      "title": "This presentation is not here",
+      "description": "It may live in another browser, or it was removed. Every presentation you can open is on the Presentations page.",
+      "action": "Show all presentations"
+    },
+    "facts": {
+      "customer": "Customer",
+      "neededBy": "Needed by",
+      "rep": "Rep",
+      "notSet": "Not set"
+    },
+    "styles": {
+      "title": "Styles",
+      "meta": "{{styles}} · {{approved}}",
+      "count_one": "{{count}} style",
+      "count_other": "{{count}} styles",
+      "approved": "{{count}} approved",
+      "kind": {
+        "build": "Build",
+        "art": "Art",
+        "blank": "Blank"
+      },
+      "decision": {
+        "approved": "Approved",
+        "revising": "Changes requested",
+        "declined": "Removed",
+        "waiting": "Waiting"
+      },
+      "artOnly": "Art only",
+      "priceEach": "{{price}} each",
+      "priceValue": "${{ price }}",
+      "each": "each",
+      "pricePending": "Price pending",
+      "moq": "MOQ <1>{{moq}}</1>",
+      "artLineName": "{{name}} art · ",
+      "artLineId": "{{id}}",
+      "artId": "Art {{id}}",
+      "slotMethod": "{{slot}} · {{method}}",
+      "remove": "Remove",
+      "confirmRemove": "Remove?",
+      "reviseWithAi": "Revise with AI",
+      "sendToDesignTeam": "Send to the design team",
+      "removed": "Removed {{name}}",
+      "undo": "Undo",
+      "moveUp": "Move up",
+      "moveDown": "Move down",
+      "moveUpAria": "Move {{name}} up",
+      "moveDownAria": "Move {{name}} down",
+      "removeAria": "Remove {{name}}",
+      "reorderingStyles": "Reordering..."
+    },
+    "summary": {
+      "title": "Summary",
+      "approvals": "Approvals",
+      "approvalsCount": "{{count}} of {{of}} approved",
+      "customerLink": "Customer link",
+      "notSent": "Not sent yet",
+      "sent": "Sent",
+      "sentNotOpened": "Sent · not opened yet",
+      "draftOrder": "Draft order",
+      "notMadeYet": "Not made yet",
+      "neededBy": "Needed by",
+      "pastDue": "Past due",
+      "dueIn_one": "{{date}} · in {{count}} day",
+      "dueIn_other": "{{date}} · in {{count}} days",
+      "dueAgo_one": "{{date}} · {{count}} day ago",
+      "dueAgo_other": "{{date}} · {{count}} days ago"
+    },
+    "actions": {
+      "groupLabel": "Presentation actions",
+      "preview": "Preview as customer",
+      "previewLabel": "Preview",
+      "previewSuffix": " as customer",
+      "share": "Share",
+      "sendForReview": "Send for customer review"
+    },
+    "activity": {
+      "title": "Activity",
+      "empty": "Nothing yet. Edits, sends, customer opens and decisions show here.",
+      "created": "created it",
+      "customer": "set the customer to {{customer}}",
+      "neededBy": "set the needed-by date to {{date}}",
+      "clearedNeededBy": "cleared the needed-by date",
+      "styles_one": "added {{count}} style: {{names}}",
+      "styles_other": "added {{count}} styles: {{names}}",
+      "stylesMore_one": "added {{count}} style: {{names}} and {{more}} more",
+      "stylesMore_other": "added {{count}} styles: {{names}} and {{more}} more",
+      "removed": "removed {{name}}",
+      "restored": "put back {{name}}"
+    },
+    "addStyles": {
+      "title": "Add styles",
+      "description": "Pick them in Products, or make new ones with Create with AI.",
+      "button": "Add styles from Products",
+      "buttonAi": "Add with Create with AI"
+    }
+  }
+}

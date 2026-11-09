@@ -1,0 +1,302 @@
+{
+  "drawer": {
+    "ariaLabel": "Product card",
+    "close": "Close",
+    "footer": "Living product record · sources: NetSuite · Spectrum · Iconik DAM"
+  },
+  "header": {
+    "setBundle": "Set bundle",
+    "brand": "Under Armour"
+  },
+  "metrics": {
+    "bundlePrice": "Bundle price",
+    "lifetimeUnits": "Lifetime units",
+    "openOrders": "Open orders",
+    "bundlePriceValue": "$47.00",
+    "lifetimeUnitsValue": "0",
+    "openOrdersValue": "0"
+  },
+  "tabs": {
+    "overview": "Overview",
+    "bundle": "Bundle / SKUs",
+    "assets": "Assets / Files",
+    "agv": "AGV Style",
+    "inventory": "Inventory",
+    "production": "Production Art",
+    "color": "Color Sequences",
+    "licensing": "Licensing",
+    "comments": "Comments",
+    "activity": "Activity log",
+    "orders": "Orders",
+    "approvals": "Approvals"
+  },
+  "workflow": {
+    "title": "Workflow status",
+    "currentStep": "At step {{number}} · {{label}}",
+    "clearedCount": "{{count}} of {{total}} cleared",
+    "status": {
+      "cleared": "cleared",
+      "current": "current",
+      "pending": "pending"
+    },
+    "steps": {
+      "customerArtQuotes": "Customer Art & Quotes",
+      "artProduction": "Art Production",
+      "license": "License",
+      "salesProduction": "Sales Production",
+      "inventory": "Inventory",
+      "capacity": "Capacity",
+      "pricing": "Pricing",
+      "financial": "Financial"
+    }
+  },
+  "overview": {
+    "ariaLabel": "Product overview",
+    "pills": {
+      "setBundle": "Set bundle",
+      "customizable": "Customizable",
+      "gender": "Gender: Unisex"
+    },
+    "bundleHeading": "The bundle · {{count}} SKUs",
+    "types": {
+      "garment": "Garment",
+      "art": "Art",
+      "decoration": "Decoration"
+    },
+    "sources": {
+      "netsuite": "NETSUITE",
+      "iconik": "ICONIK",
+      "spectrum": "SPECTRUM"
+    },
+    "garmentDescription": "Moisture-Wick Pique · Under Armour",
+    "artDescription": "Customer-supplied art",
+    "decorationName": "Embroidery",
+    "decorationDescription": "Full Center Chest · $4.00/unit",
+    "notApplicable": "NA",
+    "priceLabel": "Bundle price (per unit)",
+    "priceValue": "$47.00",
+    "placements": "Decoration placements ({{count}}/6):",
+    "placementName": "Embroidery · Full Center Chest",
+    "lifetimeUnits": "Lifetime units:"
+  },
+  "bundle": {
+    "ariaLabel": "Bundle and SKU details",
+    "sections": {
+      "garment": "Garment",
+      "artwork": "Artwork ({{count}})",
+      "decoration": "Decoration ({{count}}/6)"
+    },
+    "brand": "Brand: {{brand}}",
+    "fabric": "Fabric: {{fabric}}",
+    "fabricValue": "Moisture-Wick Pique",
+    "netsuiteItem": "NetSuite item: {{item}}",
+    "netsuiteItemValue": "NS-ITM-PP2200",
+    "inventory": "Inventory: {{available}} available of {{onHand}} on hand · {{location}}",
+    "availableUnits": "1,380",
+    "onHandUnits": "1,840",
+    "inventoryLocation": "Indianapolis DC",
+    "customerSuppliedArt": "Customer-supplied art",
+    "artKind": "Kind: {{kind}}",
+    "artKindValue": "AI generated",
+    "dam": "DAM:",
+    "damLink": "Open artwork in Iconik DAM",
+    "decorationCode": "DEC-PP-2200",
+    "decorationPlacement": "Placement: {{placement}}",
+    "decorationPlacementValue": "Full Center Chest",
+    "decorationTier": "Tier: {{tier}} · {{price}}/unit",
+    "tierValue": "Medium",
+    "decorationPrice": "$4.00"
+  },
+  "agv": {
+    "ariaLabel": "AGV Style",
+    "bannerTitle": "Art Garment Validation (AGV).",
+    "bannerBody": "The garment spec the work order pulls from, on every product so the team never leaves the card to check a size, stitch file or valid process. Spectrum / PLM validate art size, location and process against this and will stop an order that violates it.",
+    "hero": {
+      "imageSrc": "https://cdn.repspark.net/2/p/aDrgyukcs7SkZIn4LyL_Kon08HB66Axr17z6S9BzVeg/aDrgyukcs7SkZIn4LyL_Kon08HB66Axr17z6S9BzVeg-s_2000x2000",
+      "imageAlt": "BLANK-TEE",
+      "title": "BLANK-TEE · Catalog garment",
+      "description": "Screen-print decoration garment. Process method validates against Spectrum / PLM for imprint size and location."
+    },
+    "fields": {
+      "category": {"label": "Category", "value": "USMC apparel"},
+      "lob": {"label": "LOB", "value": "USMC"},
+      "classification": {"label": "Classification", "value": "JE — Jersey knit"},
+      "sizeScale": {"label": "Size scale", "value": "Adult"},
+      "stitchFile": {"label": "Stitch file", "value": "—"},
+      "production": {"label": "Production", "value": "Domestic"}
+    },
+    "sections": {
+      "colors": "Garment colors & ink / thread",
+      "locations": "Decoration locations & max sizes",
+      "validMethods": "Valid process methods",
+      "validMethodsSuffix": "· mock pending Keegan / AGV export",
+      "notes": "Decoration / LPA notes"
+    },
+    "table": {
+      "headers": {
+        "color": "COLOR",
+        "tonalLight": "TONAL LIGHT",
+        "tonalDark": "TONAL DARK",
+        "colorOnColor": "COLOR ON COLOR"
+      },
+      "rows": {
+        "white": {"label": "001 · White"},
+        "navy": {"label": "410 · Navy"}
+      },
+      "values": {
+        "standardInk": "Standard ink",
+        "whiteBaseInk": "White base + ink",
+        "tonalInk": "Tonal ink",
+        "pmsMatch": "PMS match",
+        "tonalNavy": "Tonal navy"
+      }
+    },
+    "locations": {
+      "fcc": {
+        "title": "FCC · Full Center Chest",
+        "description": "Graphic centered on the full center chest within the print field."
+      },
+      "lc": {
+        "title": "LC · Left Chest",
+        "description": "Graphic centered on the wearer left chest."
+      }
+    },
+    "locationSizes": {
+      "max12": "max 12\" × 12\"",
+      "max4": "max 4\" × 4\""
+    },
+    "methods": {
+      "p1": "P1 — 1 color, no base",
+      "p2": "P2 — 2 color, no base",
+      "x1": "X1 — 1 color + white base",
+      "by": "BY — base + color (underlay)",
+      "cp4": "4CP — process / simulated"
+    },
+    "notes": {
+      "note1": "Screen print: P-process has no underlay base; X / by-process adds a white underlay base.",
+      "note2": "P1 = one screen, one ink, one color.",
+      "note3": "Find one ink that works across all garment colors to meet screen minimums."
+    },
+    "validationGateTitle": "Validation gate.",
+    "validationGateBody": "Oversize art, an invalid location, or a process method not valid for this garment / color is blocked automatically before it can move forward.",
+    "source": "Source: GFSI AGV (Art Garment Validation) · maintained by Keegan · synced from Spectrum / PLM. Mock data for prototype."
+  },
+  "colorSequences": {
+    "ariaLabel": "Color sequences",
+    "bannerTitle": "Color sequences & elements.",
+    "bannerDescription": "Screen print: find one ink set that works across the garment colors to meet screen minimums. P-process has no base; X / by-process adds a white underlay base. Set up in Oracle Art Master, then pushed to the work order.",
+    "sequenceTitle": "Sequence {{number}} · {{code}}",
+    "active": "Active",
+    "headers": {
+      "element": "Element",
+      "screen": "Screen",
+      "description": "Description",
+      "inkColor": "Ink / Color"
+    },
+    "screen": "{{number}}",
+    "rowDescription": "Screen {{number}}",
+    "inks": {
+      "whiteBase": "White base",
+      "navy": "PMS 287 Navy",
+      "gold": "PMS 1235 Gold",
+      "black": "Black"
+    },
+    "screenCount": "{{count}} screens"
+  },
+  "assets": {
+    "description": "Every file for this product, pulled from Iconic (DAM), Spectrum and the recolor engine: renderings, art on block / on garment, the Adobe Illustrator master, production separations, color callouts, placement coordinates, refer-to art, logos, 3D model and web image. Thumbnails are live RepSpark / catalog imagery.",
+    "sections": {
+      "renderings": "Renderings & proofs",
+      "artFiles": "Art files",
+      "production": "Production",
+      "threeD": "3D"
+    },
+    "sectionCount": "· {{count}}",
+    "titles": {
+      "catalogPhoto": "Catalog photo",
+      "artOnBlock": "Art on block · ART-PP-2200",
+      "artOnGarment": "Art on garment (recolor engine)",
+      "webImage": "Web image · PP-2200",
+      "artFile": "Art file · ART-PP-2200",
+      "illustratorMaster": "Adobe Illustrator master · ART-PP-2200.ai",
+      "referToArt": "Refer-to art",
+      "crestLogo": "Crest / secondary logo",
+      "productionSeparations": "Production separations · ART-PP-2200",
+      "colorCallouts": "Color callouts · ART-PP-2200",
+      "placementCoordinates": "Placement coordinates · ART-PP-2200",
+      "threeDModel": "3D garment model · PP-2200.glb"
+    },
+    "thumbnails": {
+      "artOnBlock": "Art on block",
+      "artFile": "Art file",
+      "illustrator": "Adobe Illustrator",
+      "referTo": "Refer-to art",
+      "crest": "Crest / logo",
+      "productionReady": "Production-ready",
+      "colorCallouts": "Color callouts",
+      "placementCoords": "Placement coords"
+    },
+    "alt": {
+      "catalogPhoto": "Catalog photo",
+      "artOnBlock": "Art on block · ART-PP-2200",
+      "artOnGarment": "Art on garment (recolor engine)",
+      "webImage": "Web image · PP-2200",
+      "artFile": "Art file · ART-PP-2200",
+      "illustratorMaster": "Adobe Illustrator master · ART-PP-2200.ai",
+      "referToArt": "Refer-to art",
+      "crestLogo": "Crest / secondary logo",
+      "productionSeparations": "Production separations · ART-PP-2200",
+      "colorCallouts": "Color callouts · ART-PP-2200",
+      "placementCoordinates": "Placement coordinates · ART-PP-2200",
+      "threeDModel": "3D garment model · PP-2200.glb"
+    },
+    "badges": {
+      "rendering": "Rendering",
+      "png": "PNG",
+      "jpg": "JPG",
+      "ai": "AI",
+      "pdf": "PDF",
+      "glb": "GLB"
+    },
+    "metadata": {
+      "resolution300Dpi": "300 dpi"
+    },
+    "sources": {
+      "iconic": "Iconic",
+      "spectrum": "Spectrum"
+    }
+  },
+  "approvals": {
+    "ariaLabel": "Draft order approvals",
+    "roleGatesHeading": "Draft Order / order approval · role gates",
+    "roles": {
+      "licensing": "Licensing",
+      "finance": "Finance",
+      "capacity": "Capacity",
+      "artProduction": "Art Production"
+    },
+    "approvers": {
+      "operations": "Operations",
+      "financeApprover": "Susan Burciaga",
+      "artProductionApprover": "Scott Gowdish"
+    },
+    "noApprover": "—",
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved"
+    },
+    "pipelineHeading": "Art production pipeline ({{cleared}}/{{total}})",
+    "pipelineStages": {
+      "initialized": "Initialized",
+      "artTechnicalReview": "Art Technical Review",
+      "internalArtistWorkflow": "Internal Artist Workflow",
+      "sourceCoordinatorArtist": "Source Coordinator/Artist",
+      "sourceAuditor": "Source Auditor",
+      "proofing": "Proofing",
+      "customerArtApproval": "Customer Art Approval",
+      "licensing": "Licensing",
+      "graphicServices": "Graphic Services",
+      "finalSteps": "Final Steps"
+    }
+  }
+}

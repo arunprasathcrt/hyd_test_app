@@ -1,0 +1,281 @@
+{
+  "meta": {
+    "title": "Accounts | Unrivaled Teamwear"
+  },
+  "header": {
+    "title": "My Accounts",
+    "subtitle_one": "All {{count}} account · full access (Finance · Art · Licensing) · click any row to deep-link",
+    "subtitle_other": "All {{count}} accounts · full access (Finance · Art · Licensing) · click any row to deep-link"
+  },
+  "navigation": {
+    "ariaLabel": "Primary navigation",
+    "brand": "Unrivaled",
+    "workspace": "Workspace",
+    "manage": "Manage",
+    "accounts": "Accounts",
+    "catalog": "Catalog",
+    "orders": "Orders",
+    "activity": "Activity",
+    "help": "Help center",
+    "settings": "Settings",
+    "user": "Admin User",
+    "role": "Administrator"
+  },
+  "priority": {
+    "kicker": "Priority accounts",
+    "title": "Accounts that need your attention",
+    "locationEmpty": "Location unavailable"
+  },
+  "brands": {
+    "label": "Brand",
+    "ariaLabel": "Brand filter",
+    "all": {
+      "label": "All brands",
+      "meta": "{{count}} total"
+    }
+  },
+  "activeCarts": {
+    "eyebrow": "Active right now",
+    "empty": {
+      "count": "No carts active",
+      "title": "All your accounts are quiet right now.",
+      "message": "We'll notify you when someone starts an order."
+    }
+  },
+  "toolbar": {
+    "search": {
+      "placeholder": "Search by name, city...",
+      "ariaLabel": "Search by name, city…",
+      "submit": "Search"
+    },
+    "segment": {
+      "ariaLabel": "Segment filter",
+      "all": "All"
+    }
+  },
+  "table": {
+    "columns": {
+      "account": "Account",
+      "segment": "Segment",
+      "ordersYtd": "Orders YTD",
+      "shippedYtd": "Shipped YTD",
+      "openOrders": "Open",
+      "goal": "vs Goal",
+      "cases": "Cases"
+    },
+    "sort": {
+      "ariaLabel": "Sort by {{column}}, {{direction}}",
+      "ascending": "ascending",
+      "descending": "descending",
+      "unsorted": "not sorted"
+    },
+    "row": {
+      "openAriaLabel": "Open {{name}}",
+      "viewAs": "View As",
+      "viewAsAriaLabel": "View as {{name}}"
+    },
+    "metricEmpty": "—",
+    "empty": "No accounts found.",
+    "more": {
+      "showing": "Showing {{shown}} of {{total}}",
+      "showMore_one": "Show {{count}} more",
+      "showMore_other": "Show {{count}} more"
+    }
+  },
+  "error": {
+    "title": "Could not load accounts.",
+    "message": "Try again in a moment. If this keeps happening, contact your administrator."
+  },
+  "drawer": {
+    "eyebrow": "Customer profile",
+    "close": "Close customer profile",
+    "locationEmpty": "Location unavailable",
+    "openAccount": "Open full account",
+    "viewAs": "View As",
+    "hero": {
+      "tierBadge": "Tier {{tier}}",
+      "licensedBadge": "Licensed",
+      "platinumBadge": "Platinum",
+      "creditHoldBadge": "Credit hold",
+      "since": "since {{year}}"
+    },
+    "kpis": {
+      "ytdShipped": "YTD shipped",
+      "yoyUp": "\u2191 {{value}} YoY",
+      "yoyDown": "\u2193 {{value}} YoY",
+      "forecastFy": "Forecast FY",
+      "basis": {
+        "goal": "Set by management \u00b7 annual goal",
+        "estimate": "3-yr trailing avg \u00b7 6% growth assumed"
+      },
+      "openAr": "Open AR",
+      "allCurrent": "all current",
+      "pastDue": "{{value}} past due"
+    },
+    "footer": {
+      "close": "Close",
+      "emailPrimaryContact": "Email primary contact"
+    },
+    "tabs": {
+      "overview": "Overview",
+      "finance": "Finance",
+      "orders": "Orders",
+      "invoices": "Invoices",
+      "products": "Products",
+      "artwork": "Artwork",
+      "draftOrders": "Draft Orders",
+      "cases": "Cases",
+      "team": "Team",
+      "comments": "Comments",
+      "activity": "Activity",
+      "forecast": "Forecast",
+      "revenue": "Revenue"
+    },
+    "panels": {
+      "finance": {"title": "Finance", "unavailable": "Finance data is not served yet."},
+      "overview": {
+        "nextStepLabel": "Next step",
+        "nextStepDefault": "Reach out for a quarterly check-in.",
+        "hotStats": {
+          "activeDraftOrders": "Active draft orders",
+          "openOpportunities": "Open opportunities",
+          "lastOrder": "Last order",
+          "lastOrderEmpty": "none",
+          "netTerms": "Net {{days}}"
+        },
+        "inFlightLabel": "Currently in flight",
+        "inFlightEmpty": "No active records.",
+        "kind": {
+          "opp": "opp",
+          "quote": "quote",
+          "case": "case",
+          "order": "order"
+        }
+      },
+      "orders": {
+        "title": "Recent orders",
+        "empty": "No orders yet.",
+        "meta": "PO {{po}} \u00b7 placed {{placed}} \u00b7 ship by {{shipBy}}",
+        "poEmpty": "\u2014",
+        "columns": {
+          "number": "Order",
+          "date": "Date",
+          "status": "Status",
+          "total": "Total"
+        },
+        "history": {
+          "heading": "Art / Style Order History",
+          "subheading": "{{name}} \u00b7 style \u2192 color \u2192 size \u00b7 reorders flagged \u00b7 unit + $ totals",
+          "printExport": "Print / Export",
+          "groupHeading": "Order history (from NetSuite lines)",
+          "columns": {
+            "garment": "Garment \u00b7 Color \u00b7 Graphic",
+            "styleColorLocation": "Style / color / location",
+            "ship": "Ship",
+            "qty": "Qty",
+            "unit": "Unit",
+            "amount": "Amount"
+          },
+          "reorderBadge": "REORDER",
+          "newBadge": "NEW",
+          "orderLabel": "Order \u00b7 PO {{po}}",
+          "reorderAction": "Reorder {{po}}",
+          "reorderTitle": "Reorder this style",
+          "subtotal": "Order history subtotal",
+          "total": "Total",
+          "empty": "No orders yet for this account."
+        }
+      },
+      "invoices": {
+        "title": "Open AR",
+        "empty": "No open invoices.",
+        "meta": "issued {{issued}} \u00b7 due {{due}} \u00b7 {{terms}}",
+        "totalOutstanding": "Total outstanding",
+        "columns": {
+          "number": "Invoice",
+          "date": "Date",
+          "dueDate": "Due",
+          "status": "Status",
+          "total": "Total",
+          "balance": "Balance"
+        },
+        "summary": {
+          "outstanding": "Outstanding",
+          "outstandingCount_one": "{{count}} open invoice",
+          "outstandingCount_other": "{{count}} open invoices",
+          "pastDue": "Past due",
+          "pastDueGood": "in good standing",
+          "paidTrailing": "Paid \u00b7 trailing 12 mo",
+          "settledCount_one": "{{count}} settled",
+          "settledCount_other": "{{count}} settled",
+          "avgDaysToPay": "Avg days to pay",
+          "netTerms": "Net {{days}} terms",
+          "aging": "AR aging",
+          "agingBuckets": {
+            "current": "Current",
+            "d1_30": "1\u201330",
+            "d31_60": "31\u201360",
+            "d61_90": "61\u201390",
+            "d90plus": "90+"
+          },
+          "filters": {
+            "all": "All \u00b7 {{count}}",
+            "open": "Open \u00b7 {{count}}",
+            "pastDue": "Past due \u00b7 {{count}}",
+            "paid": "Paid \u00b7 {{count}}"
+          },
+          "searchPlaceholder": "Search invoice, PO, order...",
+          "searchAriaLabel": "Search invoice, PO, order",
+          "issuedDue": "issued {{issued}} \u00b7 due {{due}} \u00b7 {{terms}}",
+          "footerNote": "Click any invoice to preview and print it. Statements sync from NetSuite \u00b7 payment via PNC Net terms or ACH."
+        }
+      },
+      "products": {"title": "Products", "unavailable": "Product history is not served yet.", "roster": "Product roster · {{count}} SKUs", "meta": "{{units}} units · last {{date}}", "selected": "Selected: {{name}}"},
+      "artwork": {"title": "Artwork", "unavailable": "Artwork data is not served yet."},
+      "draftOrders": {"title": "Draft Orders", "empty": "No draft orders yet.", "summary": "Draft order history for {{name}} will appear here."},
+      "cases": {"title": "Cases", "empty": "No cases - relationship is healthy.", "summary": "{{count}} open cases are associated with {{name}}."},
+      "team": {
+        "title": "Team",
+        "intro": "The Unrivaled team on this account.",
+        "introDetail": "Everyone who touches it — sales, art production, licensing, finance.",
+        "membersTitle": "Team",
+        "noMembers": "No team assigned.",
+        "historyTitle": "Ownership history",
+        "roles": {
+          "salesRep": "Sales rep",
+          "accountManager": "Account manager",
+          "artProduction": "Art Production",
+          "licensing": "Licensing",
+          "finance": "Finance",
+          "collector": "Collector"
+        }
+      },
+      "comments": {"title": "Comments", "unavailable": "Comments are not served yet."},
+      "activity": {"title": "Activity", "unavailable": "Activity history is not served yet."},
+      "forecast": {"title": "Forecast", "unavailable": "Forecast data is not served yet."}
+      ,"revenue": {"title": "Revenue", "unavailable": "Revenue history is not served yet."}
+    },
+    "metrics": {
+      "shipped": "Shipped YTD",
+      "open": "Open orders",
+      "orders": "Orders YTD",
+      "cases": "Open cases"
+    }
+  },
+  "viewAsDrawer": {
+    "eyebrow": "View As Customer",
+    "close": "Close View As drawer",
+    "segmentEmpty": "Account",
+    "accountLabel": "Customer account",
+    "suggestedActions": "Suggested actions",
+    "openPortal": "Open full customer portal",
+    "buildDraftOrder": "Build a draft order",
+    "openCase": "Open case",
+    "customerSees": "Customer sees:",
+    "customerSeesBody": "Their portal home with active orders, art history, pending proofs, and the order entry spreadsheet scoped to {{name}}'s program catalog.",
+    "metrics": {
+      "orders": "Orders YTD",
+      "cases": "Open Cases"
+    }
+  }
+}

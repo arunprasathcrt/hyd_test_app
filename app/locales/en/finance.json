@@ -1,0 +1,120 @@
+{
+  "days": "days",
+  "overview": {
+    "intro": "Finance overview — credit, terms, tax, classification, addresses, AR and holds.",
+    "readOnly": "Read-only:",
+    "systemPrefix": "this is the system of record in",
+    "systemName": "NetSuite",
+    "systemSuffix": ", managed by the finance team. UTX displays it — it isn't edited here."
+  },
+  "status": {
+    "label": "Account status",
+    "approved": "✓ Approved",
+    "approvedByDate": "approved by {{name}} · {{date}}",
+    "customerNumber": "Customer #",
+    "organizationNumber": "Org #",
+    "collector": "Collector",
+    "invoiceDelivery": "Invoice delivery"
+  },
+  "credit": {
+    "section": "Credit",
+    "riskSuffix": "risk",
+    "pulled": "pulled",
+    "requested": "Requested",
+    "approvedLimit": "Approved limit",
+    "utilization": "Used {{used}} of {{limit}} · {{percent}}%",
+    "orderLimit": "Order credit limit",
+    "available": "Available",
+    "scoreHint": "A and B are above average · suggested line",
+    "helper": "Credit line held at the customer (header) level. Bill-to lines blank → flow to the customer line. A separate order credit limit caps in-flight orders."
+  },
+  "profile": {
+    "section": "Credit & collections profile",
+    "collector": "Collector",
+    "rating": "Credit rating",
+    "classification": "Credit classification",
+    "reviewCycle": "Review cycle",
+    "accountStatus": "Account status",
+    "riskCode": "Risk code",
+    "tolerance": "Tolerance",
+    "creditCheck": "Credit check",
+    "creditHold": "Credit hold",
+    "overrideTerms": "Override terms",
+    "discountGrace": "Discount grace",
+    "receiptGrace": "Receipt grace",
+    "on": "On",
+    "off": "Off",
+    "yes": "Yes",
+    "no": "No",
+    "helper": "Mirrors Oracle Profile : Transaction — collector, credit check / hold, tolerance and grace days. AutoCash rule: {{rule}}."
+  },
+  "terms": {
+    "section": "Payment terms",
+    "label": "Terms",
+    "tier": "Tier",
+    "methods": "Payment methods",
+    "helper": "Default Net 30 when a credit limit exists · CIA when no limit · Net 45/60 for Platinum. Dating-program overrides allowed."
+  },
+  "charges": {
+    "section": "Finance charges & dunning",
+    "interest": "Finance charge interest",
+    "maxInterest": "Max interest / invoice",
+    "minStatement": "Min statement",
+    "minDunning": "Min dunning",
+    "minReceipt": "Min receipt",
+    "minCustomerBalance": "Min cust. balance · charges",
+    "helper": "Mirrors Oracle Profile : Amounts — finance-charge, statement and dunning thresholds (currency USD)."
+  },
+  "tax": {
+    "section": "Tax & identity",
+    "salesTax": "Sales tax",
+    "taxExempt": "Tax-exempt",
+    "taxable": "Taxable",
+    "exemptionCertificate": "Exemption certificate",
+    "certExpires": "Cert expires",
+    "ein": "EIN / FEIN"
+  },
+  "classification": {
+    "section": "Classification",
+    "customerType": "Customer type",
+    "customerClass": "Customer class",
+    "profileClass": "Profile class (collections)",
+    "helper": "Set by sales admin, validated by finance · drives pricing & commission rules."
+  },
+  "addresses": {
+    "billing": "Billing addresses · {{count}}",
+    "billingHelper": "Bill-tos carry the credit line — sales reps can't edit them. New addresses are added (old ones inactivated), never edited.",
+    "shipping": "Shipping addresses · {{count}}",
+    "searchPlaceholder": "Wildcard search ship-to (store #, city, address)…",
+    "searchAriaLabel": "Search shipping addresses",
+    "showing": "Showing {{shown}} of {{total}} ship-to locations",
+    "row": "{{address}} · Site {{site}} · Bill-to {{billTo}}",
+    "inactive": "inactive",
+    "noResults": "No ship-to locations match your search."
+  },
+  "ar": {
+    "section": "Accounts receivable & aging",
+    "current": "Current",
+    "pastDue1To30": "1–30 past due",
+    "pastDue31To60": "31–60 past due",
+    "pastDue61Plus": "61+ past due",
+    "outstanding": "Outstanding",
+    "onAccountCash": "On-account cash",
+    "onAccountCredits": "On-account credits",
+    "unappliedCash": "Unapplied cash",
+    "receiptsAtRisk": "Receipts at risk",
+    "customerBalance": "Customer balance",
+    "viewInvoices": "View invoices →"
+  },
+  "requests": {
+    "section": "Credit-limit & term requests",
+    "empty": "No open requests.",
+    "open_one": "{{count}} open request.",
+    "open_other": "{{count}} open requests."
+  },
+  "errors": {
+    "boundary": "Finance data could not be loaded.",
+    "required": "errors.required",
+    "invalidSelection": "errors.invalidSelection"
+  }
+}

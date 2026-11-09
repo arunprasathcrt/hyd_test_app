@@ -1,0 +1,183 @@
+{
+  "neededBy": {
+    "eyebrow": "Needed by",
+    "title": "When does your customer need it in hand?",
+    "description": "Pick the date the customer needs product in hand. Every date opens two build paths.",
+    "label": "Needed-by date",
+    "status": "Spectrum · {{date}}",
+    "daysOut": "{{count}} days out",
+    "insideWindow": "inside the 6-week window",
+    "outsideWindow": "6 weeks and beyond",
+    "summarySpectrum": "{{days}} days out · inside the 6-week custom window · Spectrum is the fast path",
+    "summaryAi": "{{days}} days out · 6 weeks and beyond · Create with AI is recommended",
+    "changeDate": "Change date",
+    "pickDateStatus": "Pick a date to begin",
+    "chooseDate": "Choose a date",
+    "pastStatus": "Date in the past",
+    "pastSummary": "That date has already passed. Pick a future date.",
+    "choosePathStatus": "{{date}} · choose a path",
+    "spectrumStatus": "Spectrum · {{date}}",
+    "aiStatus": "AI build · {{date}}"
+  },
+  "datePicker": {
+    "dialogLabel": "Choose the needed-by date",
+    "previousMonth": "Previous month",
+    "nextMonth": "Next month",
+    "quickPicksLabel": "Quick picks",
+    "today": "Today",
+    "daysOut": "{{count}} days out",
+    "insideSixWeeks": "inside 6 weeks",
+    "sixWeeksAndBeyond": "6 weeks and beyond",
+    "spectrumLane": "Spectrum lane",
+    "aiRecommended": "Create with AI recommended",
+    "quick": {
+      "twoWeeks": "2 wks",
+      "fourWeeks": "4 wks",
+      "sixWeeks": "6 wks",
+      "eightWeeks": "8 wks"
+    },
+    "weekdays": {
+      "sunday": "Sunday",
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday"
+    },
+    "legend": {
+      "spectrum": "Inside 6 weeks · Build in Spectrum",
+      "ai": "6 weeks and beyond · Create with AI recommended",
+      "firstDay": "First day past 6 weeks"
+    },
+    "hintSpectrum": "{{date}} · {{days}} days out · Spectrum lane",
+    "hintAi": "{{date}} · {{days}} days out · Create with AI recommended"
+  },
+  "buildPaths": {
+    "heading": "Choose your build path",
+    "recommended": "Recommended",
+    "alsoOpen": "Also open",
+    "whatYouGet": "What you get",
+    "tradeOffs": "Trade-offs",
+    "spectrumFooter": "Both paths stay open. Spectrum is recommended inside six weeks because nothing waits on new art or licensing.",
+    "aiFooter": "Both paths stay open. Create with AI is recommended when the timeline allows for art production, licensing and approvals.",
+    "spectrum": {
+      "tag": "Fast lane · preset build",
+      "title": "Build in Spectrum",
+      "description": "Place licensed art on a ready-made blank and create the product in minutes. No render queue, no waiting on new art.",
+      "timeTitle": "In hand in days",
+      "timeDescription": "Fits your {{days}} days window with room to spare",
+      "cta": "Build in Spectrum",
+      "creditTitle": "Uses no AI credits.",
+      "creditDescription": "Spectrum places licensed art on a blank; nothing is rendered.",
+      "pros": {
+        "catalog": "Catalog blanks with real colorways",
+        "licensed": "8M+ licensed marks, placed to the AGV standard",
+        "production": "Skips art production and licensing",
+        "handoff": "Instant product hand-off to UTX"
+      },
+      "cons": {
+        "existing": "Existing art only, no new concepts",
+        "placements": "Preset placements and methods"
+      }
+    },
+    "ai": {
+      "tag": "Creative lane · custom build",
+      "title": "Create with AI",
+      "description": "The render engine designs brand-new art for any account, re-skins a source garment's design language, and renders it to life.",
+      "timeTitle": "About 6 weeks",
+      "timeDescription": "Art production · licensing · approvals",
+      "cta": "Create with AI",
+      "caution": "Tight timeline: {{daysOut}} days out is {{daysShort}} days short of the 6-week window. You can still continue, but licensing and approvals will need to be expedited.",
+      "creditTitle": "Unlimited AI credits",
+      "creditDescription": "for admins. About 1 credit per render, up to three options.",
+      "topUpCredits": "Top up the team's credits",
+      "unlimitedCredits": "Unlimited credits",
+      "pros": {
+        "concepts": "New concepts for any account, mascot or palette",
+        "reskin": "Re-skin any source garment's design language",
+        "renders": "Before/after renders, history and approvals",
+        "creative": "The most creative latitude"
+      },
+      "cons": {
+        "timeline": "Needs about 6 weeks for art production and licensing",
+        "approvals": "More steps and approvals along the way"
+      }
+    }
+  },
+  "handoff": {
+    "label": "Render close but not right?",
+    "action": "Hand off to an artist"
+  },
+  "spectrumDrawer": {
+    "eyebrow": "Build in Spectrum",
+    "title": "Choose a garment",
+    "description": "Spectrum customizes one garment at a time. Pick it here, then build it in Spectrum.",
+    "close": "Close",
+    "searchPlaceholder": "Search styles, colors, SKUs",
+    "searchLabel": "Search garments",
+    "readyOnly": "Spectrum-ready only",
+    "resultCount_one": "{{count}} Spectrum-ready style",
+    "resultCount_other": "{{count}} Spectrum-ready styles",
+    "inSpectrum": "In Spectrum",
+    "garmentMeta": "{{style}} · {{count}} colors",
+    "pickHint": "Pick one garment. Spectrum customizes one at a time.",
+    "cancel": "Cancel",
+    "customize": "Customize in Spectrum",
+    "pickColorInSpectrum": "You pick the color in Spectrum",
+    "categories": {
+      "all": "All categories",
+      "sweats": "Sweats & Hoodies",
+      "tops": "Tops",
+      "headwear": "Headwear",
+      "bottoms": "Bottoms",
+      "jerseys": "Jerseys",
+      "outerwear": "Outerwear",
+      "accessories": "Accessories",
+      "bags": "Bags",
+      "footwear": "Footwear"
+    },
+    "colors": {
+      "all": "All colors",
+      "black": "Black",
+      "white": "White",
+      "grey": "Grey / Heather",
+      "blue": "Blue / Navy",
+      "red": "Red",
+      "green": "Green",
+      "pink": "Pink",
+      "other": "Other"
+    },
+    "brands": {
+      "label": "Brand",
+      "all": "All brands",
+      "champion": "Champion",
+      "gearForSports": "Gear for Sports",
+      "lululemon": "Lululemon",
+      "underArmour": "Under Armour"
+    },
+    "empty": {
+      "title": "No Spectrum styles match these filters",
+      "description": "Search every product on the Products page.",
+      "searchProducts": "Search Products",
+      "clearFilters": "Clear search and filters"
+    }
+  },
+  "spectrumPage": {
+    "back": "Back",
+    "backToArtDesign": "Back to Art Design",
+    "title": "Spectrum",
+    "changeProduct": "Change product",
+    "neededBy": "Needed by",
+    "days": "{{count}} days",
+    "reload": "Reload",
+    "openInNewTab": "Open in new tab",
+    "ready": "The Spectrum customizer is ready on {{sku}}",
+    "loading": "Loading {{sku}} in Spectrum…",
+    "colorPickedInSpectrum": "{{sku}} · color picked in Spectrum",
+    "error": {
+      "title": "Spectrum did not respond",
+      "description": "The staging customizer can take a moment to wake up. Reload it here, or open it in a new tab."
+    }
+  }
+}

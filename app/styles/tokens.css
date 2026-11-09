@@ -1,0 +1,220 @@
+/**
+ * UTDS v1.0 — design tokens.
+ *
+ * Ported verbatim from the prototype's CSS. Every value here is a literal
+ * lifted out of the prototype stylesheets; nothing is rounded, re-ramped, or
+ * replaced with a shadcn/Tailwind default (Visual Fidelity Rule 5).
+ *
+ * The prototype is a single-file demo and is NOT internally consistent — it
+ * uses several near-identical inks (#0F0F0F, #111113, #1F1F23, #202124) and
+ * two grey ramps (#8B8B8B, #8E8E93, #8A8A91) depending on which component the
+ * rule came from. Those are preserved as separate tokens rather than collapsed
+ * into one, because collapsing them would change rendered colour.
+ *
+ * ❓ TO CONFIRM: which ink/grey is canonical in UTDS. Once design rules, the
+ * duplicates below can be aliased rather than kept apart.
+ *
+ * Consumed two ways:
+ *   - directly as `var(--utds-*)` from component stylesheets
+ *   - as Tailwind utilities, via the `@theme inline` map in `tailwind.css`
+ */
+
+:root {
+  /* ----------------------------------------------------------------
+     SURFACES
+  ---------------------------------------------------------------- */
+  --utds-surface-raised: #ffffff;
+  --utds-surface-page: #fafafa;
+  --utds-surface-hover: #f8f8f8;
+  --utds-surface-sunken: #f4f4f6;
+  --utds-surface-muted: #f0f0f0;
+
+  /* ----------------------------------------------------------------
+     BORDERS
+  ---------------------------------------------------------------- */
+  --utds-border-subtle: #ececee;
+  --utds-border-default: #e5e5e7;
+  --utds-border-table: #eaeaea;
+  --utds-border-row: #f0f0f0;
+  --utds-border-dashed: #dddddd;
+  --utds-border-strong: #d9d9de;
+  --utds-border-stronger: #d7d7da;
+
+  /* ----------------------------------------------------------------
+     TEXT RAMP
+  ---------------------------------------------------------------- */
+  /* Primary ink used by the page header and data table. */
+  --utds-text-primary: #0f0f0f;
+  /* The active-carts / card ink. */
+  --utds-text-ink: #111113;
+  /* The filter-chip ink. */
+  --utds-text-strong: #1f1f23;
+  /* The search-input ink. */
+  --utds-text-body: #202124;
+  --utds-text-secondary: #5c5c61;
+  --utds-text-tertiary: #8b8b8b;
+  --utds-text-muted: #8e8e93;
+  --utds-text-placeholder: #8a8a91;
+  --utds-text-chip: #4a4a52;
+  --utds-text-chip-brand: #525252;
+  --utds-text-inverse: #ffffff;
+  --utds-text-inverse-muted: #d7d7da;
+
+  /* ----------------------------------------------------------------
+     ACCENT
+     Primary CTAs are charcoal — no teal or gold primaries (standing
+     ruling from V44/V50). Gold is a live/attention accent only.
+  ---------------------------------------------------------------- */
+  --utds-accent-charcoal: #1a1a1a;
+  --utds-accent-gold: #c9a227;
+
+  /* ----------------------------------------------------------------
+     STATUS — the vs-Goal bands
+  ---------------------------------------------------------------- */
+  --utds-status-success: #10b981;
+  --utds-status-info: #3b82f6;
+  --utds-status-warning: #fb923c;
+
+  /* ----------------------------------------------------------------
+     ACTIONS — button fills, lifted verbatim from the prototype buttons
+  ---------------------------------------------------------------- */
+  /* Primary button hover; the fill itself is --utds-text-ink. */
+  --utds-action-primary-hover: #2a2a2d;
+  /* Secondary button fill and ghost hover — not --utds-surface-sunken (#f4f4f6). */
+  --utds-action-soft: #f4f4f2;
+  --utds-action-soft-hover: #eaeae8;
+  --utds-action-danger: #b42318;
+  --utds-action-danger-hover: #912018;
+  --utds-action-success-bg: #eaf5ec;
+  --utds-action-success-border: #d8ebdd;
+  --utds-action-success-fg: #2e5944;
+  --utds-text-disabled: #b6b6bb;
+
+  /* ----------------------------------------------------------------
+     CALLOUTS — Alert banners and notes
+  ---------------------------------------------------------------- */
+  --utds-callout-info-bg: #e8f1f0;
+  --utds-callout-info-border: #bfdad8;
+  --utds-callout-info-fg: #0f4c4c;
+  --utds-callout-warning-bg: #fcf4f3;
+  --utds-callout-warning-border: #f3d9d6;
+  --utds-callout-warning-fg: #7a2018;
+  --utds-callout-success-bg: #f2f8f5;
+  --utds-callout-success-border: #d6e5dd;
+  /* ❓ TO CONFIRM: 3-digit shorthand looks unfinished — check against the prototype. */
+  --utds-callout-success-fg: #234;
+
+  /* ----------------------------------------------------------------
+     SEGMENT COLOURS
+     Each badge pairs a translucent background keyed off a *different*,
+     darker hue than its foreground. That mismatch is in the prototype
+     and is reproduced here rather than harmonised.
+  ---------------------------------------------------------------- */
+  --utds-segment-golf: #10b981;
+  --utds-segment-golf-bg: rgba(31, 122, 63, 0.1);
+  --utds-segment-golf-border: rgba(31, 122, 63, 0.2);
+
+  --utds-segment-resort: #3b82f6;
+  --utds-segment-resort-bg: rgba(44, 82, 130, 0.1);
+  --utds-segment-resort-border: rgba(44, 82, 130, 0.2);
+
+  --utds-segment-university: #f472b6;
+  --utds-segment-university-bg: rgba(122, 48, 16, 0.1);
+  --utds-segment-university-border: rgba(122, 48, 16, 0.2);
+
+  --utds-segment-retail: #8b5cf6;
+  --utds-segment-retail-bg: rgba(91, 61, 142, 0.1);
+  --utds-segment-retail-border: rgba(91, 61, 142, 0.2);
+
+  --utds-segment-military: #fb923c;
+  --utds-segment-military-bg: rgba(61, 85, 32, 0.12);
+  --utds-segment-military-border: rgba(61, 85, 32, 0.2);
+
+  --utds-segment-corporate: #6366f1;
+  --utds-segment-corporate-bg: rgba(146, 64, 14, 0.1);
+  --utds-segment-corporate-border: rgba(146, 64, 14, 0.2);
+
+  /* ----------------------------------------------------------------
+     BRAND DOTS
+  ---------------------------------------------------------------- */
+  --utds-brand-neutral: #b5b5b5;
+  --utds-brand-ua: #8b5cf6;
+  --utds-brand-champion: #3b82f6;
+  --utds-brand-other: #8b8b8b;
+
+  /* ----------------------------------------------------------------
+     PILLS
+  ---------------------------------------------------------------- */
+  --utds-pill-pink-bg: #fce7f3;
+  --utds-pill-pink-fg: #db2777;
+
+  /* ----------------------------------------------------------------
+     AVATAR
+  ---------------------------------------------------------------- */
+  --utds-avatar-gradient: linear-gradient(135deg, #444444, #111111);
+
+  /* ----------------------------------------------------------------
+     RADII
+  ---------------------------------------------------------------- */
+  --utds-radius-sm: 8px;
+  --utds-radius-md: 10px;
+  --utds-radius-lg: 12px;
+  --utds-radius-xl: 20px;
+  --utds-radius-2xl: 24px;
+  --utds-radius-pill: 999px;
+
+  /* ----------------------------------------------------------------
+     SHADOWS
+  ---------------------------------------------------------------- */
+  --utds-shadow-card-hover: 0 1px 24px rgba(17, 17, 19, 0.04);
+  --utds-shadow-cta-hover: 0 1px 24px rgba(17, 17, 19, 0.08);
+
+  /* ----------------------------------------------------------------
+     MOTION
+  ---------------------------------------------------------------- */
+  --utds-ease-standard: cubic-bezier(0.32, 0.72, 0, 1);
+  --utds-ease-ui: ease;
+  --utds-duration-fast: 120ms;
+  --utds-duration-base: 150ms;
+  --utds-duration-slow: 200ms;
+  --utds-duration-slower: 220ms;
+}
+
+/**
+ * Products catalog tokens (`mf-*`).
+ *
+ * Ported verbatim from the prototype's product-listing stylesheet — a
+ * separate token set from UTDS above because the catalog prototype predates
+ * the UTDS unification and uses its own surface/ink/accent ramp.
+ */
+:root {
+  --mf-bg: #f6f5f2;
+  --mf-surface: #ffffff;
+  --mf-surface-2: #fbfaf7;
+  --mf-border: #eae7e0;
+  --mf-border-2: #ddd9d0;
+  --mf-line: #f0ede6;
+  --mf-ink: #14130f;
+  --mf-ink-2: #57544c;
+  --mf-ink-3: #8b877d;
+  --mf-ink-4: #b6b1a6;
+  --mf-gold: #c9a227;
+  --mf-gold-deep: #9a6c2a;
+  --mf-gold-soft: rgba(201, 162, 39, 0.14);
+  --mf-gold-line: rgba(201, 162, 39, 0.42);
+  --mf-teal: #0f4c4c;
+  --mf-teal-soft: rgba(15, 76, 76, 0.08);
+  --mf-terra: #b7404e;
+  --mf-green: #2e7d50;
+  --mf-lead: #c77d2e;
+  --mf-primary: #1a1a1a;
+  --mf-primary-dark: #000000;
+  --mf-r-sm: 8px;
+  --mf-r-md: 12px;
+  --mf-r-lg: 16px;
+  --mf-pill: 999px;
+  --mf-sh1: 0 1px 2px rgba(20, 19, 15, 0.04), 0 1px 3px rgba(20, 19, 15, 0.03);
+  --mf-sh2: 0 6px 18px rgba(20, 19, 15, 0.06), 0 2px 6px rgba(20, 19, 15, 0.04);
+  --mf-sh3:
+    0 18px 44px rgba(20, 19, 15, 0.12), 0 6px 14px rgba(20, 19, 15, 0.06);
+}

@@ -1,0 +1,242 @@
+{
+	"draftOrders": {
+		"title": "Draft Orders",
+		"sentExpires": "sent {{sentDate}} · expires {{expiryDate}}",
+		"expiresOnly": "sent · expires {{expiryDate}}",
+		"page": {
+			"title": "Draft orders",
+			"subtitle": "{{ordersCount}} draft orders · {{amount}} in flight · {{org}}",
+			"orgScope": "The whole sales org",
+			"actionsAriaLabel": "Page actions",
+			"viewAriaLabel": "View",
+			"newDraftOrder": "New draft order",
+			"views": {
+				"draftOrders": "Draft orders",
+				"managerApprovals": "Manager approvals"
+			},
+			"list": {
+				"sectionAriaLabel": "Draft orders list",
+				"version": "v{{version}}",
+				"columns": {
+					"order": "Order",
+					"customer": "Customer",
+					"status": "Status",
+					"brands": "Brands",
+					"amount": "Amount",
+					"updated": "Updated"
+				},
+				"mobile": {
+					"customer": "Customer: {{value}}",
+					"status": "Status: {{value}}",
+					"brands": "Brands: {{value}}",
+					"amount": "Amount: {{value}}"
+				},
+				"empty": "No draft orders yet.",
+				"emptyValue": "-",
+				"ariaLabel": "Draft orders list",
+				"searchPlaceholder": "Search PO, ID, account, style",
+				"searchAriaLabel": "Search draft orders by PO, ID, account or style",
+				"brands": {
+					"ariaLabel": "Brand",
+					"all": "All brands",
+					"ua": "Under Armour",
+					"champion": "Champion",
+					"lululemon": "lululemon",
+					"other": "Gear",
+					"filterAriaLabel": "{{brand}} filter, {{count}} draft orders",
+					"badges": {
+						"ua": "UA",
+						"champion": "C",
+						"lululemon": "L",
+						"other": "G"
+					}
+				},
+				"money": "{{value, currency}}",
+				"statuses": {
+					"ariaLabel": "Status",
+					"all": "All",
+					"draft": "Draft",
+					"sent": "Sent to customer",
+					"approved": "Customer approved",
+					"workflows": "In workflows",
+					"ready": "Ready to convert",
+					"converted": "Converted",
+					"rejected": "Rejected",
+					"lost": "Lost"
+				},
+				"results": {
+					"count_one": "{{count}} draft order",
+					"count_other": "{{count}} draft orders",
+					"matchCount_one": "{{count}} draft order",
+					"matchCount_other": "{{count}} draft orders",
+					"forSearch": "for “{{query}}”",
+					"inFlight": " · {{amount, currency(maximumFractionDigits: 0)}} in flight"
+				},
+				"actions": {
+					"exportCsv": "Export CSV",
+					"archived": "Archived - {{count}}",
+					"backToDraftOrders": "Back to open draft orders "
+				},
+				"sort": {
+					"label": "Sort",
+					"default": "Default",
+					"ariaLabel": "Sort draft orders",
+					"options": {
+						"default": "Default",
+						"ship": "Ship date, soonest",
+						"expires": "Expires, soonest",
+						"recent": "Recently sent",
+						"value": "Value, high to low",
+						"customer": "Customer, A to Z"
+					}
+				},
+				"table": {
+					"ariaLabel": "Draft orders",
+					"columns": {
+						"orderId": "Order ID",
+						"status": "Status",
+						"customer": "Customer",
+						"brands": "Brands",
+						"shipTo": "Ship-to",
+						"updated": "Updated",
+						"workflow": "Workflow",
+						"amount": "Amount",
+						"details": "Details"
+					},
+					"showDetails": "Show the details of {{id}}"
+				},
+				"emptyList": {
+					"title": "No draft orders found",
+					"description": "Try adjusting your search or filters.",
+					"filteredTitle": "No draft orders match these filters",
+					"filteredDescription": "No draft order has this status yet.",
+					"clearFilters": "Clear filters"
+				},
+				"pagination": {
+					"showing": "Showing {{visible}} of {{total}}",
+					"showMore": "Show {{count}} more"
+				},
+				"details": {
+					"order": "Order",
+					"workflow": "Workflow · {{cleared}} of {{total}} cleared",
+					"workflowAriaLabel": "{{cleared}} of {{total}} workflow stages cleared",
+					"workflowStages": {
+						"customerArtApproval": "Customer art approval",
+						"quantityApproval": "Quantity approval",
+						"artProduction": "Art production",
+						"license": "License",
+						"salesProductionApproval": "Sales production approval",
+						"inventory": "Inventory",
+						"capacity": "Capacity",
+						"pricing": "Pricing",
+						"financial": "Financial"
+					},
+					"workflowStatuses": {
+						"passed": "Passed",
+						"queued": "Queued",
+						"active": "In progress",
+						"blocked": "Blocked",
+						"na": "Not needed"
+					}
+				},
+				"expanded": {
+						"summary": "{{configs}} · {{units}}",
+						"configs_one": "{{count}} config",
+						"configs_other": "{{count}} configs",
+						"units_one": "{{count}} unit",
+						"units_other": "{{count}} units",
+						"lineMeta": "{{color}} · {{units}}",
+						"lineMetaNoColor": "{{units}}",
+						"money": "{{value, currency}}",
+						"sendStates": {
+							"notSent": "Not sent yet",
+							"sent": "Sent",
+							"approved": "Approved by the customer"
+						},
+						"ordered": "Ordered · {{order}}",
+						"next": "Next",
+						"nextActions": {
+							"chooseBuyer": "Choose the order's buyer (one per order)",
+							"addDescription": "Add a description",
+							"addProducts": "Add products",
+							"addSizes": "Add sizes to a line",
+							"lockArtAndQuantity": "Lock art and quantities"
+						},
+						"workflow": "Workflow · {{done}} of {{total}} done",
+						"stage": "{{n}} · {{name}}",
+						"stageStates": {
+							"passed": "Passed",
+							"queued": "Queued",
+							"active": "In progress",
+							"blocked": "Flagged",
+							"na": "Not needed"
+						},
+						"export": {
+							"artwork": "Artwork",
+							"tax": "Sales tax ({{rate, percent(maximumFractionDigits: 2)}})",
+							"columns": {
+								"draftOrder": "Draft order",
+								"line": "Line",
+								"style": "Style",
+								"product": "Product",
+								"colour": "Colour",
+								"art": "Art",
+								"sizes": "Sizes",
+								"units": "Units",
+								"unitPrice": "Unit price",
+								"lineTotal": "Line total",
+								"approval": "Approval",
+								"customer": "Customer",
+								"shipTo": "Ship-to",
+								"status": "Status",
+								"version": "Version",
+								"updated": "Updated",
+								"subtotal": "Subtotal",
+								"total": "Total"
+							}
+						},
+						"actions": {
+							"restore": "Restore",
+							"restoreToast" : "{{id}} is back with the open draft orders",
+							"archiveConfirm": "Archive? Press again",
+							"ariaLabel": "Quick actions for {{id}}",
+							"customerSees": "Customer sees this",
+							"open": "Open",
+							"duplicate": "Duplicate",
+							"duplicateToast" : "Duplicated {{id}} as {{newId}}. It starts as a fresh draft",
+							"duplicateError": "Could not duplicate this draft. Try again.",
+							"previewError": "Could not load the preview. Try again.",
+							"send": "Send",
+							"sendTip": "The customer receives this email. You are copied.",
+							"preview": "Preview",
+							"previewTipTitle" : "Customer sees this",
+							"previewTipDescription": "Opens it exactly as the customer sees it.",
+							"export": "Export",
+							"exportToolTip" : "Exported the lines of {{id}}",
+							"archive": "Archive",
+							"archiveToast" : "{{id}} Archived. Find it under Archived."
+						}
+					},
+					"kpis": {
+					"ariaLabel": "Your open book",
+					"openDraftOrderValue": {
+						"label": "Open draft order value",
+						"subtext": "{{count}} open draft orders in flight"
+					},
+					"projectedRevenue": {
+						"label": "Projected revenue",
+						"subtext": "At the {{rate}}% historical close rate"
+					},
+					"accountsInPlay": {
+						"label": "Accounts in play",
+						"subtext": "{{count}} draft orders need you"
+					},
+					"conversionRate": {
+						"label": "Conversion rate",
+						"subtext": "{{converted}} of {{total}} decided draft orders became orders"
+					}
+				}
+			}
+		}
+	}
+}

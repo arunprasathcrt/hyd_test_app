@@ -1,0 +1,26 @@
+{
+  "required": "This field is required",
+  "tooLong": "This value is too long",
+  "boundary": {
+    "title": "Oops",
+    "unknown": "Unknown error"
+  },
+  "auth": {
+    "forbidden": "You do not have permission to do that",
+    "notConfigured": "Single sign-on is not available right now. Contact your administrator.",
+    "providerError": "Your organization’s sign-in service returned an error. Please try again."
+  },
+  "catalogTitle": "Products unavailable",
+  "catalogUnavailable": "The product data connection is not configured. Please try again later.",
+  "forbidden": "You do not have permission to view these products.",
+  "integrationPending": "TO CONFIRM: this action needs the Shopify persistence and permission mapping. Nothing has been saved.",
+  "errors": {
+    "required": "This field is required.",
+    "price": "Enter a valid price.",
+    "quantity": "Enter a valid quantity.",
+    "search": "Search must be 160 characters or fewer.",
+    "intent": "Choose a valid action.",
+    "selection": "Select between 1 and 100 styles.",
+    "name": "Use 100 characters or fewer."
+  }
+}

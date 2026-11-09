@@ -1,0 +1,391 @@
+{
+  "meta": {"title": "Orders | Unrivaled Teamwear"},
+  "page": {
+    "title": "Orders",
+    "subtitle": "{{shown}} of {{total}} orders · {{amount}} placed",
+    "history": "Art / Style History",
+    "export": "Export",
+    "brand": "Brand",
+    "allBrands": "All brands",
+    "searchPlaceholder": "Search by PO, ID, account…",
+    "searchAriaLabel": "Search orders",
+    "empty": "No orders found.",
+    "columns": {
+      "order": "Order",
+      "brand": "Brand",
+      "po": "PO",
+      "account": "Account",
+      "shipTo": "Ship to",
+      "placed": "Placed",
+      "shipBy": "Ship by",
+      "status": "Status",
+      "total": "Total"
+    },
+    "sort": {
+      "aria": {
+        "default": "Sort by {{column}}",
+        "asc": "Sorted ascending by {{column}}. Activate to sort descending.",
+        "desc": "Sorted descending by {{column}}. Activate to sort ascending."
+      }
+    },
+    "shipping": {
+      "locked": "Shipping address locked",
+      "open": "Shipping address"
+    }
+  },
+  "brands": {
+    "all": "All brands",
+    "underArmour": "Under Armour",
+    "champion": "Champion",
+    "other": "Other"
+  },
+  "statuses": {
+    "all": "All",
+    "pendingProof": "Pending",
+    "inProduction": "In Production",
+    "shipped": "Shipped",
+    "delivered": "Delivered"
+  },
+  "detail": {
+    "format": {
+      "date": "{{value, date(month: short; day: numeric; year: numeric; timeZone: UTC)}}",
+      "day": "{{value, date(month: short; day: numeric; timeZone: UTC)}}",
+      "money": "{{value, currency(minimumFractionDigits: 2; maximumFractionDigits: 2)}}",
+      "count": "{{value, number}}",
+      "percent": "{{value, percent(maximumFractionDigits: 0)}}"
+    },
+    "status": {
+      "pending": "Pending production",
+      "production": "In production",
+      "hold": "On hold",
+      "shipped": "Shipped",
+      "delivered": "Delivered"
+    },
+    "repOnly": "Rep only",
+    "customerSees": " (the customer sees this)",
+    "updatesDaily": "Status updates daily",
+    "header": {
+      "back": "Orders",
+      "title": "Order {{id}}",
+      "erp": "ERP {{id}}",
+      "erpTip": "ERP order number. The order in the ERP. Status and tracking sync back daily.",
+      "po": "PO {{po}}",
+      "placed": "Placed {{date}}",
+      "received": "Received by {{channel}} · view only",
+      "actionsLabel": "Order actions",
+      "actions": {
+        "invoice": {
+          "label": "View invoice",
+          "tip": "Opens the pro forma invoice the customer gets"
+        },
+        "print": {
+          "label": "Print or save as PDF",
+          "tip": "Prints or saves the pro forma invoice the customer gets"
+        },
+        "email": {
+          "label": "Email customer",
+          "tip": "Emails the customer with the invoice attached; the rep is copied"
+        }
+      }
+    },
+    "track": {
+      "title": "Order status",
+      "notInvoiced": "Not invoiced yet"
+    },
+    "steps": {
+      "since": "Since {{date}}",
+      "expected": "Expected {{date}}",
+      "labels": {
+        "placed": "Order placed",
+        "ready": "Production ready",
+        "production": "In production",
+        "shipped": "Shipped",
+        "delivered": "Delivered"
+      }
+    },
+    "criticalPath": {
+      "title": "Critical path",
+      "onTrack": "On track for {{date}}",
+      "teamOwner": "{{team}} · {{owner}}",
+      "state": {
+        "done": "Done",
+        "active": "In progress",
+        "waiting": "Waiting"
+      },
+      "stages": {
+        "inventory": {
+          "label": "Inventory allocation",
+          "team": "Inventory planning",
+          "note": "Allocated against stock on hand and the next purchase order"
+        },
+        "art": {
+          "label": "Art production",
+          "team": "Art production",
+          "note": "Production-ready art released"
+        },
+        "license": {
+          "label": "Licensing",
+          "team": "Licensing",
+          "note": "Approved by the licensor"
+        },
+        "production": {
+          "label": "Production",
+          "team": "The plant",
+          "note": "On the production floor"
+        },
+        "pack": {
+          "label": "Pack and ship",
+          "team": "Distribution center",
+          "note": "Packs to the ship-to after production"
+        }
+      }
+    },
+    "holds": {
+      "title": "Holds and dates",
+      "none": "No holds on this order",
+      "terms": "Terms {{terms}} · Nothing past due",
+      "dates": {
+        "requestedInHands": {
+          "label": "Requested in-hands",
+          "hint": "What the customer asked for"
+        },
+        "confirmedShip": {
+          "label": "Confirmed ship date",
+          "hint": "From the plant"
+        },
+        "cancelBy": {
+          "label": "Cancel by",
+          "hint": "Soft: a two-week buffer, notify first"
+        },
+        "event": {
+          "label": "Event",
+          "value": "No event",
+          "hint": "Not an event order"
+        }
+      },
+      "notices": {
+        "title": "Date-change notices sent",
+        "none": "No date changes so far."
+      }
+    },
+    "items": {
+      "title": "Items",
+      "meta_one": "{{count}} line · {{units}} units",
+      "meta_other": "{{count}} lines · {{units}} units",
+      "openProduct": "Open the product card for {{name}}",
+      "openProductTip": "Open the product card",
+      "skuColor": "{{sku}} · {{color}}",
+      "artReady": "Production-ready art",
+      "sizeRun": "Size run",
+      "units": "Units",
+      "facts": {
+        "art": "Art",
+        "artValue": "{{art}} · sketch {{sketch}}",
+        "placement": "Placement",
+        "decoration": "Decoration",
+        "decorationValue": "{{method}} · process {{process}}",
+        "threads": "Threads",
+        "threadsValue_one": "{{count}} thread: {{list}}",
+        "threadsValue_other": "{{count}} threads: {{list}}",
+        "inks": "Inks",
+        "inksValue_one": "{{count}} ink: {{list}}",
+        "inksValue_other": "{{count}} inks: {{list}}",
+        "upc": "UPC · customer SKU",
+        "upcValue": "{{upc}} · {{sku}}",
+        "finishing": "Finishing",
+        "linePo": "Line PO",
+        "ships": "Ships",
+        "shipsValue": "{{date}} · {{carrier}}"
+      },
+      "money": {
+        "qty": "Quantity",
+        "unit": "Unit price",
+        "line": "Line total"
+      }
+    },
+    "breakdown": {
+      "toggle": "Internal breakdown",
+      "lineCaption": "Internal breakdown per unit and for the line",
+      "orderCaption": "Internal breakdown for the order",
+      "part": "Part",
+      "perUnit": "Per unit",
+      "line": "Line",
+      "parts": {
+        "garment": "Garment",
+        "art": "Art",
+        "decoration": "Decoration",
+        "fullyLoaded": "Unit price, fully loaded"
+      },
+      "order": {
+        "garments": "Garments",
+        "artLicense": "Art and license",
+        "decoration": "Decoration",
+        "margin": "Gross margin (estimate, {{rate}})",
+        "cogs": "Cost of goods (estimate)",
+        "commission": "Commission (estimate, {{rate}})",
+        "royalty": "Royalty rate",
+        "tierTerms": "Account tier · terms",
+        "tierTermsValue": "{{tier}} · {{terms}}"
+      }
+    },
+    "totals": {
+      "title": "Totals",
+      "subtotal_one": "Subtotal · {{count}} line",
+      "subtotal_other": "Subtotal · {{count}} lines",
+      "discount": "Discounts",
+      "tax": "Sales tax",
+      "taxTip": "Calculated for the ship-to address",
+      "total": "Total",
+      "freightNote": "Freight and final pricing are on your invoice."
+    },
+    "shipments": {
+      "title": "Shipments",
+      "none": "Not shipped yet",
+      "noneBody": "It ships by {{date}} to {{shipTo}}. Tracking shows here the day after it ships."
+    },
+    "others": {
+      "title": "Other orders for this account",
+      "count_one": "{{count}} order",
+      "count_other": "{{count}} orders",
+      "open": "Open order {{id}}, {{status}}, {{total}}",
+      "holdTip": "Order placed · {{reason}}",
+      "showing": "Showing {{shown}} of {{total}}",
+      "showingAll": "Showing all {{total}}",
+      "loadMore": "Load more"
+    },
+    "activity": {
+      "title": "Activity",
+      "internal": "Internal",
+      "intro": "Status, notices, holds and documents. For the team only: the customer never sees this list.",
+      "addNote": "Add a note",
+      "items": {
+        "production": {
+          "title": "In production",
+          "body": "On the production floor"
+        },
+        "ready": {
+          "title": "Production ready",
+          "body": "At the plant, not started. Changes are still possible."
+        },
+        "placed": {
+          "title": "Order placed",
+          "body": "Received by {{channel}}"
+        },
+        "erpCreated": {
+          "title": "Created in the ERP as {{erp}}",
+          "body": "Status syncs back daily"
+        }
+      }
+    },
+    "summary": {
+      "label": "Order summary",
+      "eyebrow": "Order",
+      "copyLabel": "Copy the order number {{id}}",
+      "copyTip": "Copy the order number",
+      "copied": "Copied {{id}}",
+      "shipToValue": "{{name}} · {{city}}",
+      "paymentValue": "Unpaid until invoiced · {{terms}}",
+      "rows": {
+        "erp": "ERP order",
+        "status": "Status",
+        "placed": "Placed",
+        "customer": "Customer",
+        "contact": "Contact",
+        "po": "PO",
+        "brand": "Brand",
+        "channel": "Channel",
+        "rep": "Rep",
+        "shipTo": "Ship-to",
+        "payment": "Payment",
+        "total": "Total"
+      }
+    },
+    "change": {
+      "title": "Need a change?",
+      "body": "{{channel}} orders are view only. Changes and cancels go to customer service.",
+      "reorderTip": "Copies the lines, art, sizes and ship-to into a new draft order. Changed items go back through art production and licensing.",
+      "returns": "Returns are handled by customer service.",
+      "actions": {
+        "change": "Ask for a change",
+        "cancel": "Request a cancel",
+        "reorder": "Reorder"
+      }
+    },
+    "invoice": {
+      "eyebrow": "Invoice",
+      "title": {
+        "proForma": "Pro forma invoice",
+        "issued": "Invoice {{number}}"
+      },
+      "sub": {
+        "proForma": "{{account}} · {{id}} · ERP {{erp}} · {{total}} · not issued yet",
+        "issued": "{{account}} · {{id}} · ERP {{erp}} · {{total}} · issued {{date}}"
+      },
+      "internalTag": "Internal",
+      "note": {
+        "proForma": "Placeholder invoice: the business supplies the final format, and the CRM will fetch it from the ERP on demand, then show, print or send it as it is. Not invoiced yet: the ERP issues the invoice when the order ships.",
+        "issued": "Placeholder invoice: the business supplies the final format, and the CRM will fetch it from the ERP on demand, then show, print or send it as it is."
+      },
+      "close": "Close",
+      "zoom": {
+        "label": "Zoom",
+        "fit": "Fit width",
+        "actual": "Actual size"
+      },
+      "print": {
+        "label": "Print or save as PDF",
+        "tip": "Prints or saves the document the customer gets"
+      },
+      "email": {
+        "label": "Email the customer",
+        "tip": "Emails this document to the customer, with the rep copied"
+      },
+      "pageLabel": "{{title}}, page 1 of 1",
+      "doc": {
+        "company": "Unrivaled Teamwear",
+        "tagline": "An Ames Watson company",
+        "heading": {
+          "proForma": "PRO FORMA INVOICE",
+          "issued": "INVOICE"
+        },
+        "meta": {
+          "number": "Invoice number",
+          "date": "Invoice date",
+          "due": "Due date",
+          "order": "Order",
+          "po": "Customer PO",
+          "rep": "Your rep"
+        },
+        "notIssued": "Not issued yet",
+        "whenShips": "When it ships",
+        "dueValue": "{{date}} ({{terms}})",
+        "poNotSet": "Not set",
+        "billTo": "Bill to",
+        "shipTo": "Ship to",
+        "columns": {
+          "item": "Item",
+          "qty": "Qty",
+          "unit": "Unit price",
+          "amount": "Amount"
+        },
+        "lineDetail": "{{sku}} · {{color}} · {{method}}, {{placement}}",
+        "lineSizes": "Sizes {{sizes}} · UPC {{upc}}",
+        "sizeQty": "{{size}} {{qty}}",
+        "subtotal": "Subtotal",
+        "discount": "Discount",
+        "tax": "Sales tax",
+        "total": {
+          "proForma": "Estimated total",
+          "issued": "Total"
+        },
+        "amountDue": "Amount due",
+        "footnote": {
+          "proForma": "This pro forma shows the order as it stands today. The invoice is issued when the order ships.",
+          "issued": "Payment terms {{terms}}. Please include the invoice number with your payment."
+        },
+        "questions": "Questions about this invoice: {{rep}}",
+        "page": "Page 1 of 1"
+      }
+    }
+  }
+}

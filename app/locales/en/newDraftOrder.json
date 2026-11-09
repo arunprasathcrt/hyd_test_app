@@ -1,0 +1,1564 @@
+{
+  "newDraftOrder": {
+    "page": {
+      "eyebrow": "Draft Orders",
+      "title": "New Draft Order",
+      "subtitle": {
+        "version": "v{{version}}",
+        "expires": "expires {{date, date(dateStyle: medium; timeZone: UTC)}}"
+      },
+      "actions": {
+        "createWithAi": "Create with AI"
+      }
+    },
+    "status": {
+      "draft": "Draft"
+    },
+    "stepper": {
+      "ariaLabel": "Draft order steps",
+      "stepAriaLabel": "Step {{n}} of {{total}}, {{label}}",
+      "currentStep": "current step",
+      "completedStep": "completed",
+      "attention_one": "{{count}} item needs attention: {{items}}",
+      "attention_other": "{{count}} items need attention: {{items}}",
+      "tooltip": {
+        "needsAttention": "Needs attention"
+      }
+    },
+    "steps": {
+      "customer": {
+        "label": "Brands & customer",
+        "title": "Brands & customer",
+        "sub": "Who is this order for?"
+      },
+      "type": {
+        "label": "Order type",
+        "title": "Order type",
+        "sub": "What type of order is this?"
+      },
+      "products": {
+        "label": "Products",
+        "title": "Products",
+        "sub": "Products, art and quantities."
+      },
+      "ship": {
+        "label": "Ship to & delivery",
+        "title": "Ship to & delivery",
+        "sub": "Where is this order headed?"
+      },
+      "review": {
+        "label": "Review & submit",
+        "title": "Review & submit",
+        "sub": "Final approvals before production is committed."
+      }
+    },
+    "stepHead": {
+      "chip": "Step {{n}} of {{total}}"
+    },
+    "sumbar": {
+      "title": "Overview",
+      "attention_one": "{{count}} item needs attention",
+      "attention_other": "{{count}} items need attention"
+    },
+    "sheet": {
+      "close": "Close"
+    },
+    "stepMenu": {
+      "trigger": "Step {{n}} of {{total}}: {{label}}",
+      "ariaLabel": "Draft order steps menu",
+      "attention_one": "{{count}} item needs attention: {{items}}",
+      "attention_other": "{{count}} items need attention: {{items}}",
+      "notChosen": "Not chosen",
+      "noProducts": "No products yet",
+      "shipSummary": "{{name}} +{{count}}",
+      "notStarted": "Not started"
+    },
+    "missing": {
+      "title_one": "One thing to finish on this step",
+      "title_other": "{{count}} things to finish on this step",
+      "body": "Next still moves on. Sending waits for these.",
+      "hardStop": "You can't move on until the items above are fixed, including any card below its minimum."
+    },
+    "issues": {
+      "brandsRequired": "Brand selection missing",
+      "ordername": "Order name missing",
+      "description": "Description missing",
+      "classification": "Order classification missing",
+      "interface": "Interface missing",
+      "locks": "Art and quantity not locked",
+      "doesNotBlock": "{{step}} · does not block sending",
+      "noProducts": "No products yet",
+      "noQuantity": "No line has a quantity yet",
+      "needsSizes": "Line {{number}} ({{name}}) needs sizes",
+      "belowMinimum": "Card {{number}} below minimum ({{total}} of {{moq}})"
+    },
+    "customer": {
+      "card": {
+        "title": "Customer and order",
+        "sub": "The customer sets the royalty, the minimums, tax and the addresses."
+      },
+      "fields": {
+        "customer": {
+          "label": "Customer",
+          "placeholder": "Search or choose a customer",
+          "clear": "Clear the field to search again",
+          "clearTooltipTitle": "Clear",
+          "clearTooltipDescription": "Search again or choose another customer",
+          "showAll": "Show every customer",
+          "recentAndOpenDrafts": "Recent and open drafts",
+          "listLabel": "Customers",
+          "option": "{{name}} · {{segment}}",
+          "optionMeta": "{{code}} · {{segment}} · Tier {{tier}}",
+          "noMatch": "No customer matches “{{query}}”",
+          "count_one": "{{count}} customer",
+          "count_other": "{{count}} customers"
+        },
+        "inHands": {
+          "label": "In-hands date",
+          "openCalendar": "Open the calendar: In-hands date, {{date, date(weekday: short; month: short; day: numeric; year: numeric; timeZone: UTC)}}",
+          "dialogLabel": "Choose the in-hands date",
+          "value": "{{date, date(weekday: short; month: short; day: numeric; year: numeric; timeZone: UTC)}}",
+          "daysOut_one": "{{count}} day out · soonest {{date, date(dateStyle: medium; timeZone: UTC)}}",
+          "daysOut_other": "{{count}} days out · soonest {{date, date(dateStyle: medium; timeZone: UTC)}}",
+          "atRisk": "At risk",
+          "onTrack": "On track",
+          "soonestHint": "Set to the soonest possible date. Change it if the customer needs it later.",
+          "previousMonth": "Previous month",
+          "nextMonth": "Next month"
+        },
+        "orderName": {
+          "label": "Order name",
+          "placeholder": "e.g. Homecoming 2027",
+          "help": "A label for you and the title of the customer's page."
+        },
+        "description": {
+          "label": "Order description",
+          "placeholder": "e.g. Falcon team kits for Homecoming 2027",
+          "help": "The customer sees this on the proposed order."
+        },
+        "programCode": {
+          "label": "Program code",
+          "first": "Program code",
+          "second": "Second program code",
+          "none": "None",
+          "noSecond": "No second code",
+          "help": "Tracking and dating, not pricing. A second code covers a multi-brand order.",
+          "options": {
+            "resort_extended": "Resort extended dating",
+            "spring": "Spring dating",
+            "fall": "Fall dating",
+            "preseason": "Preseason dating",
+            "net60": "NET-60 dating",
+            "ccp": "CCP",
+            "core": "CORE",
+            "edu": "EDU",
+            "gsa": "GSA",
+            "event": "Event"
+          }
+        }
+      },
+      "account": "{{code}} · {{segment}} · Tier {{tier}} · {{terms}} · Royalty {{royalty, percent}}",
+      "vip": "VIP",
+      "segments": {
+        "golf": "Golf",
+        "resort": "Resort",
+        "bookstore": "Bookstore",
+        "retail": "Retail",
+        "military": "Military",
+        "corporate": "Corporate"
+      }
+    },
+    "brands": {
+      "title": "Brands in scope",
+      "sub": "Picked from the customer. Select all that apply.",
+      "selected": "{{count}} selected",
+      "inScope": "{{brand}}, in scope",
+      "notInScope": "{{brand}}, not in scope",
+      "removeTip": "In scope. Press to take it out.",
+      "addTip": "Press to add it to the draft order.",
+      "help_one": "One brand. Add another to mix brands on one draft order: it splits into one order per brand on convert.",
+      "help_other": "{{count}} brands. Lines split into one order per brand on convert.",
+      "help_zero": "Pick at least one brand.",
+      "keepOneOnDraftOrder": "Keep at least one brand on the draft order.",
+      "hasProducts_one": "{{count}} line on this draft is a {{brand}} product, so {{brand}} stays in scope. Remove it in Products first.",
+      "hasProducts_other": "{{count}} lines on this draft are {{brand}} products, so {{brand}} stays in scope. Remove them in Products first.",
+      "names": {
+        "Champion": "Champion",
+        "Gildan": "Gildan",
+        "Bella": "Bella",
+        "Comfort Colors": "Comfort Colors",
+        "Hanes": "Hanes",
+        "Port & Company": "Port & Company",
+        "Next Level": "Next Level",
+        "American Apparel": "American Apparel"
+      }
+    },
+    "orderType": {
+      "card": {
+        "title": "Order type",
+        "sub": "A new order, or a reorder of one the customer placed before."
+      },
+      "clear": "Clear",
+      "options": {
+        "new": {
+          "title": "New order",
+          "description": "A net-new configuration: garments, art and decoration from scratch."
+        },
+        "reorder": {
+          "title": "Reorder",
+          "description": "Copy a previous order into this draft: its art is already approved, so it moves fast."
+        }
+      },
+      "rules": {
+        "label": "Workflow rules",
+        "options": {
+          "new": "Standard: every workflow runs",
+          "sample": "Sample: no inventory hold, no minimum",
+          "custom": "Custom: a manager sets the workflows"
+        },
+        "help": {
+          "new": "Every one of the nine workflows runs on submit.",
+          "sample": "Inventory is not held and no minimum applies.",
+          "custom": "A manager chooses which workflows run."
+        }
+      }
+    },
+    "classification": {
+      "card": {
+        "title": "Classification and interface",
+        "sub": "Only the fields this classification needs appear below."
+      },
+      "fields": {
+        "placeholder": "Choose one",
+        "classification": {
+          "label": "Order classification",
+          "help": "Available to order: in-line styles from stock."
+        },
+        "interface": {
+          "label": "Interface",
+          "placeholder": "Choose an interface",
+          "help": "Decorated garments: each bundle has its garment and its art."
+        }
+      }
+    },
+    "leadTime": {
+      "card": {
+        "title": "Lead time",
+        "sub": "Decoration, art and the account set the soonest ship date. The lines' own methods count too."
+      },
+      "days": "{{count}}d",
+      "plusDays": "+{{count}}d",
+      "methods": {
+        "label": "Decoration methods · select all that apply",
+        "optionAria": "{{method}}, {{days}} days",
+        "options": {
+          "screen_print": {
+            "label": "Screen print"
+          },
+          "embroidery": {
+            "label": "Embroidery"
+          },
+          "three_d_embroidery": {
+            "label": "3D embroidery"
+          },
+          "heat_press": {
+            "label": "Heat press"
+          },
+          "applique": {
+            "label": "Appliqué"
+          },
+          "sublimation": {
+            "label": "Sublimation"
+          },
+          "dtg": {
+            "label": "DTG"
+          },
+          "patch": {
+            "label": "Patch"
+          },
+          "versa_twill": {
+            "label": "Versa twill"
+          },
+          "caps": {
+            "label": "Caps"
+          },
+          "blank": {
+            "label": "Blank / no decoration"
+          }
+        }
+      },
+      "flags": {
+        "label": "Art and account",
+        "optionAria": "{{flag}}, plus {{days}} days",
+        "options": {
+          "new_art": {
+            "label": "New art (needs approval)"
+          },
+          "licensed_art": {
+            "label": "Licensed art"
+          },
+          "pro_sports_license": {
+            "label": "Pro-sports license (MLB/NFL/…)"
+          },
+          "new_account": {
+            "label": "New account"
+          },
+          "needs_po": {
+            "label": "Some items need a PO (not in stock)"
+          }
+        }
+      },
+      "summary": {
+        "firstAvailableShipDate": "First available ship date",
+        "daysOut": "Days out",
+        "inHandsBy": "In hands by",
+        "defaultHint": "Pick a decoration method, or add products, to narrow this from the six-week default.",
+        "selectedHint": "Lead time reflects selected methods and account/art modifiers."
+      }
+    },
+    "ship": {
+      "optional": "optional",
+      "days_one": "{{count}} day",
+      "days_other": "{{count}} days",
+      "dateShort": "{{date, date(month: short; day: numeric; timeZone: UTC)}}",
+      "pace": {
+        "onTrack_one": "On track · {{count}} day to spare",
+        "onTrack_other": "On track · {{count}} days to spare",
+        "atRisk_one": "At risk · {{count}} day behind",
+        "atRisk_other": "At risk · {{count}} days behind",
+        "atRiskSoonest_one": "At risk · {{count}} day to spare",
+        "atRiskSoonest_other": "At risk · {{count}} days to spare",
+        "late_one": "Late · {{count}} day short",
+        "late_other": "Late · {{count}} days short"
+      },
+      "neededBy": {
+        "title": "Needed by",
+        "sub": "When does the customer need this in hand? Production, inventory and shipping work back from it.",
+        "inHandsHelp": "Boxes open on site. The same date as step 1.",
+          "dateAdjusted": "The date moved to {{date}} because the selected lead time is longer.",
+        "daysOut": {"label": "Days out", "help": "From today to the in-hands date."},
+        "startBy": {"label": "Must start production by", "help": "Work starts by {{date}}."},
+        "firstShip": {
+          "label": "First available ship date",
+          "help": "Soonest from the standard lead times for {{methods}} and the art and account on this order."
+        },
+        "shipOutIn": "Ship out in",
+        "phases": {
+          "title": "Back-schedule",
+          "ariaLabel": "Phases worked back from the in-hands date",
+          "artProduction": "Art Production",
+                    "accountSetup": "Account setup",
+                    "licensing": "Licensing",
+                    "procurement": "Procurement",
+          "production": "Production",
+          "shipping": "Shipping",
+          "receiving": "Receiving buffer",
+          "inHands": "In hands",
+          "range": "{{from}} to {{to}}"
+        },
+        "roadSigns": {
+          "title": "Road signs",
+          "description": "Road signs show here once products are on the draft order: each bundle says On track or At risk, with the fix.",
+          "target": "Ready by {{date}}",
+          "ariaLabel_one": "{{count}} road sign",
+          "ariaLabel_other": "{{count}} road signs",
+          "onTrack": "On track",
+          "atRisk": "At risk",
+          "workWithModifiers": "{{method}} with {{modifiers}}",
+          "separator": ", ",
+          "onTrackDetail": "{{work}}: ready by {{date}} · {{days}} to spare",
+          "atRiskDetail": "{{work}} needs {{days}}: ready by {{date}}, {{lateBy}} after the in-hands date."
+        }
+      },
+      "cancel": {
+        "title": "Cancel date",
+        "sub": "One date for the whole order. It never cancels anything by itself.",
+        "label": "Cancel date",
+        "help": "Starts at the in-hands date. Pick a later date if the customer allows it. Nothing is cancelled automatically and the customer gets no reminders. It goes to their current system with the order."
+      },
+      "event": {
+        "title": "Event",
+        "sub": "Optional. When an event date is set, it needs an event name.",
+        "date": {
+          "label": "Event date",
+          "help": "The day of the event, if there is one.",
+          "daysOut_one": "{{count}} day out",
+          "daysOut_other": "{{count}} days out"
+        },
+        "name": {
+          "label": "Event name",
+          "placeholder": "e.g. Homecoming 2027",
+          "help": "e.g. Homecoming 2027. Required once an event date is set."
+        }
+      },
+      "location": {
+        "option": "{{name}} · {{city}}, {{zone}}",
+        "optionPrimary": "{{name}} · {{city}}, {{zone}} · primary",
+        "optionCity": "{{city}}, {{zone}}",
+        "namePrimary": "{{name}} · primary",
+        "cityLine": "{{city}}, {{zone}} {{zip}}",
+        "cityLinePrimary": "{{city}}, {{zone}} {{zip}} · primary",
+        "primaryLabel": "primary",
+        "oneLine": "{{address1}} · {{city}}, {{zone}} {{zip}}"
+      },
+      "addresses": {
+        "title": "Ship to and bill to",
+        "sub": "The default delivery address and who pays. Switch it, or add delivery locations below.",
+        "change": "Change",
+        "dialog": {
+          "eyebrow": "Change ship-to · New draft · {{customer}}",
+          "billEyebrow": "Change bill-to · New draft · {{customer}}",
+          "title": "Choose a location",
+          "sub": "This change applies to this order only. Production locks the address once stitching begins.",
+          "billSub": "This change applies to this order only. Billing is set by the credit team.",
+          "close": "Close",
+          "default": "Default",
+          "savedLocations": "Saved locations",
+          "addLocation": "Add new location",
+          "add": {
+            "eyebrow": "New location",
+            "title": "Add a saved location",
+            "sub": "Saved locations show up everywhere you ship: in the ship-to picker, the delivery locations and the topbar location switcher.",
+            "required": "*",
+            "optional": "optional",
+            "fields": {
+              "title": {"label": "Location title", "placeholder": "e.g. Main pro shop, tournament warehouse"},
+              "address1": {"label": "Address line 1", "placeholder": "Street address"},
+              "address2": {"label": "Address line 2", "placeholder": "Suite, building, dock"},
+              "city": {"label": "City", "placeholder": "City"},
+              "state": {"label": "State", "placeholder": "CA"},
+              "zip": {"label": "Postal code", "placeholder": "00000"}
+            },
+            "defaultTitle": "Set as default ship-to",
+            "defaultSub": "This location is selected automatically for new orders for {{customer}}.",
+            "back": "Back to locations",
+            "save": "Save location"
+          },
+          "cancel": "Cancel",
+          "useLocation": "Use this location"
+        },
+        "ship": {
+          "label": "Ship to (primary)",
+          "changeAria": "Change the ship-to",
+          "primary": "Primary",
+          "code": "Ship-to {{code}} · no license",
+          "codeLicensed": "Ship-to {{code}} · licensed",
+          "attention": "Attn: {{name}} · {{phone}}"
+        },
+        "bill": {
+          "label": "Bill to (auto default)",
+          "changeAria": "Change the bill-to",
+          "setBy": "Set by the credit team",
+          "account": "{{code}} · {{terms}}"
+        }
+      },
+      "details": {
+        "title": "Order details",
+        "sub": "Defaults for every line. Every line converts into its own order;set its own PO or ship date in Products.",
+        "po": {"label": "Customer PO", "placeholder": "e.g. PB-2026-0914", "help": "Prints on the order acknowledgement."},
+        "shipCode": {"label": "Ship code", "placeholder": "e.g. SIP", "help": "SIP, NB4 or CAO."},
+        "leavesPlant": {"label": "Leaves the plant by", "help": "In-hands date less shipping and the receiving buffer."},
+        "shipVia": {"label": "Ship via", "help": "From Location 1. Change it on the location."},
+        "split": {
+          "title": "How this draft will split",
+          "empty": "Add products to see how the draft converts: one order per line.",
+          "listAria": "Orders on convert",
+          "row": "Order {{order}} · Card {{card}} · {{title}} · {{brand}}",
+          "artNotChosen": "Art not chosen yet",
+          "separator": " · ",
+          "garments_one": "{{count}} garment",
+          "garments_other": "{{count}} garments",
+          "units_one": "{{count}} unit",
+          "units_other": "{{count}} units",
+          "beforeTax": "{{value, currency}} before tax",
+          "po": "PO {{po}}",
+          "noPo": "No PO yet",
+          "due": "Due {{date, date(month: short; day: numeric; timeZone: UTC)}}",
+          "note_one": "This draft converts into one order: one card.",
+          "note_other": "This draft converts into {{count}} orders, one per card."
+        }
+      },
+      "delivery": {
+        "title": "Delivery locations",
+        "sub": "One draft order can ship to several addresses: lines are billed together and shipped separately. The minimum counts the whole order.",
+        "count_one": "{{count}} location",
+        "count_other": "{{count}} locations",
+        "add": "Add delivery location",
+        "helpSingle": "Everything ships to Location 1. Add a location to split the lines.",
+        "helpSplit": "Lines ship separately to {{count}} locations and are billed together.",
+        "splitEvenly": "Split units evenly",
+        "allocationProgress": "{{assigned}} of {{total}} units assigned",
+        "unassigned_one": "{{count}} unit not yet assigned",
+        "unassigned_other": "{{count}} units not yet assigned",
+        "overAllocated_one": "{{count}} more unit assigned than ordered",
+        "overAllocated_other": "{{count}} more units assigned than ordered",
+        "assignToPrimary": "Assign them to Location 1",
+        "trimExtra": "Trim the extra",
+        "productCount_one": "{{count}} product",
+        "productCount_other": "{{count}} products",
+        "method": "Shipping method",
+        "indicator": "Ship indicator",
+        "customRouting": "Custom routing (COM) · override the routing guide for this order",
+        "methods": {
+          "ground": "Ground",
+          "thirdDay": "3rd day",
+          "twoDay": "2nd day",
+          "nextDay": "Next day",
+          "nextDayEarly": "Next day early",
+          "twoDayEarly": "2nd day early",
+          "nextDayAir": "Next Day Air (NDA)"
+        },
+        "indicators": {"sip": "SIP · ship as soon as possible", "n_before": "N-Before · do not ship before date"},
+        "indicatorsShort": {"sip": "Ship as soon as possible", "n_before": "Do not ship before date"},
+        "dialog": {
+          "eyebrow": "Delivery location {{n}}",
+          "eyebrowPrimary": "Delivery location {{n}} · primary ship-to",
+          "title": "Edit delivery location",
+          "sub": "Lines ship separately and bill together. The minimum counts the whole order.",
+          "addTitle": "Add a delivery location",
+          "addSub": "Lines ship separately and bill together. The minimum counts the whole order.",
+          "close": "Close delivery location dialog",
+          "where": "Where",
+          "locationMode": "Delivery location mode",
+          "chooseLocation": "Choose a location",
+          "addLocation": "Add a new location",
+          "shipTo": "Ship to",
+          "primaryLocationHelp": "Location {{n}} is the primary ship-to: changing it changes the primary.",
+          "locationHelp": "A saved location of {{name}}.",
+          "shipVia": "Ship via",
+          "shipViaHelp": "Ground unless the customer asks for faster.",
+          "optional": "optional",
+          "routingOverrideTitle": "Custom routing",
+          "routingOverrideHelp": "Override the routing guide for this address.",
+          "addLocationNote": "This location will be saved to the customer account when the draft is saved.",
+          "newLocation": {
+            "name": "Location title",
+            "namePlaceholder": "Location title",
+            "address1": "Address line 1",
+            "address1Placeholder": "Street address",
+            "address2": "Address line 2",
+            "address2Placeholder": "Suite, building, dock",
+            "city": "City",
+            "cityPlaceholder": "City",
+            "state": "State",
+            "statePlaceholder": "State",
+            "zip": "Postal code",
+            "zipPlaceholder": "Postal code"
+          },
+          "how": "How",
+          "fields": {
+            "notBefore": "Not before",
+            "deliveryFrom": "Delivery from",
+            "deliveryTo": "Delivery to",
+            "deliveryToHelp": "The in-hands date when empty.",
+            "po": "PO",
+            "poPlaceholder": "e.g. PO for this address",
+            "discountCode": "Discount code",
+            "discountCodePlaceholder": "e.g. SPRING10",
+            "shipCode": "Ship code",
+            "shipCodePlaceholder": "e.g. SIP"
+          },
+          "routing": {
+            "carrier": "Carrier",
+            "carrierPlaceholder": "e.g. the customer's carrier",
+            "serviceLevel": "Service level",
+            "serviceLevelPlaceholder": "e.g. Next day",
+            "account": "Account",
+            "accountPlaceholder": "Collect account number"
+          },
+          "unitsTitle": "Units to this address",
+          "unitsSingle": "This is the only location, so every unit ships here. Add another location to split the lines.",
+          "unitsPrimaryHelp": "Location 1 takes what is unassigned.",
+          "unitsOtherHelp": "Units come from what is unassigned first, then from Location 1.",
+          "lineProduct": "Line {{lineNumber}} · {{product}}",
+          "allocationCount": "{{assigned}} of {{total}} units",
+          "unitsOfAvailable": "of {{count}}",
+          "allocatedUnits_one": "{{count}} unit to this address",
+          "allocatedUnits_other": "{{count}} units to this address",
+          "assignAllAvailable": "Assign all available",
+          "variantUnits": "{{size}} · {{count}} available",
+          "allocationLabel": "{{product}}, size {{size}} units to this address",
+          "noProducts": "Add products and quantities before assigning units.",
+          "status": "Lines ship separately and bill together.",
+          "cancel": "Cancel",
+          "save": "Save changes"
+        },
+        "location": {
+          "primaryTitle": "Location {{n}} · primary ship-to",
+          "title": "Location {{n}}",
+          "addressAria": "Address of location {{n}}",
+          "summary": "{{method}} · {{indicator}} · Delivery by {{date}}",
+          "unitsAll": "Every product · {{units}}",
+          "unitsSplit": "{{products}} · {{units}}",
+          "unitsNone": "No products assigned yet.",
+          "deliveryBy": "Delivery by {{date}}",
+          "windowRange": "Delivery {{from}} to {{to}}",
+          "anyDay": "any day",
+          "inHandsDate": "the in-hands date ({{date}})",
+          "notBefore": "Not before {{date}}",
+          "po": "PO {{po}}",
+          "routing": "Custom routing",
+          "routingCarrier": "Custom routing · {{carrier}}",
+          "customAddress": "{{name}} · {{address1}}{{address2Part}}, {{city}}, {{state}} {{zip}}",
+          "customAddress2": " · {{address2}}",
+          "noAddress": "No address selected",
+          "edit": "Edit details",
+          "editAria": "Edit location {{n}}: method, window and units",
+          "remove": "Remove",
+          "removeAria": "Remove location {{n}}",
+          "removeConfirmTitle": "Remove delivery location {{n}}?",
+          "removeConfirmDescription": "Products assigned to this location will be reassigned to Location 1.",
+          "removeCancel": "Keep location",
+          "removeConfirmAction": "Remove location",
+          "deleteConfirmTitle": "Delete saved location {{n}}?",
+          "deleteConfirmDescription": "This permanently deletes the saved Company Location. Products assigned to this row will return to Location 1.",
+          "deleteConfirmAction": "Delete saved location",
+          "deleteWorking": "Deleting location…"
+        }
+      }
+    },
+    "dateField": {
+      "placeholder": "Choose a date",
+      "dialogLabel": "Choose the {{field}}",
+      "openCalendar": "Open the calendar: {{field}}, {{date, date(weekday: short; month: short; day: numeric; year: numeric; timeZone: UTC)}}",
+      "openCalendarEmpty": "Open the calendar: {{field}}, not set"
+    },
+    "pendingSteps": {
+      "products": "Add product bundles, decoration details, and quantities on this step.",
+      "ship": "Set ship-to locations, delivery timing, and shipping method on this step.",
+      "review": "Review totals, workflow checks, and submit for customer approval on this step."
+    },
+    "review": {
+      "title": "Review",
+      "sub": "Check the details of the order and send it to the customer for approval.",
+      "bundleCount": "{{bundles}} bundles · {{units}} units",
+      "lines": {
+        "notSent": "Not sent yet",
+        "artCard": "Card {{card}} · {{state}}",
+        "artNotChosen": "Art not chosen yet",
+        "artReady": "Art selected",
+        "garment": "Garment",
+        "artwork": "Artwork",
+        "decoration": "Decoration",
+        "shipTo": "Ship to",
+        "sizes": "Sizes",
+        "sizesNotSet": "Sizes not set",
+        "quantity": "Quantity",
+        "needsSizes": "Line {{line}} ({{name}}) needs sizes",
+        "fix": "Fix",
+        "requestOverride": "Request manager override",
+        "overrideUnavailable": "Manager approval is not available yet. Use Fix to update the quantities.",
+        "editProduct": "Edit product",
+        "editShipTo": "Edit ship-to",
+        "convertsWith": "Converts with Card {{card}} (Line {{line}})",
+        "priceAria": "Line {{line}} price",
+        "price": {
+          "quantity": "Qty",
+          "garmentPrice": "Garment",
+          "artPrice": "Art",
+          "decorationPrice": "Decoration",
+          "unitPrice": "Unit",
+          "lineTotal": "Line total"
+        }
+      },
+      "linesTax": "Lines {{lines}} · tax {{tax}}",
+      "linesSummary": "Lines {{lines}}",
+      "estimatedSubtotal": "Estimated subtotal, before tax and freight",
+      "actions": {
+        "label": "Review actions",
+        "holdConversion" : "Hold conversion",
+        "releaseHold": "Release the hold",
+        "preview": "Preview as the customer",
+        "closePreview": "Close customer preview",
+        "previewTip": "Opens it exactly as the customer sees it.",
+        "print": "Print or save as PDF",
+        "printTip": "This PDF is the customer's document.",
+        "emailCustomer": "Email the customer",
+        "emailCopy": "Email a copy",
+        "customerNote": "Customer sees this",
+        "previewTitle": "Customer preview",
+        "previewProductsEmpty": "Products, artwork, quantities and prices will appear here after they are added.",
+        "emailUnavailable": "Email is unavailable until the draft has a customer email address and a send workflow."
+      },
+      "holdDialog": {
+        "eyebrow": "Hold conversion",
+        "title": "Hold {{orderNumber}} from converting",
+        "titleWithoutId": "Hold draft order from converting",
+        "description": "It will not convert on its own until the hold is released or its date passes.",
+        "close": "Close",
+        "reason": "Reason",
+        "reasons": {
+          "customerPo": "Waiting on the customer's PO",
+          "creditReview": "Credit review in progress",
+          "customerWait": "Customer asked to wait",
+          "productionSlot": "Production slot not confirmed",
+          "other": "Other"
+        },
+        "note": "Note",
+        "notePlaceholder": "What the team should know",
+        "until": "Hold until (optional)",
+        "untilHelp": "Leave it empty to hold until you release it.",
+        "cancel": "Cancel",
+        "submit": "Hold conversion",
+        "toast": {
+          "held": "QT-{{id}} is on hold. It will not convert until the hold is released.",
+          "heldWithoutId": "Draft order is on hold. It will not convert until the hold is released.",
+          "heldUntil": "QT-{{id}} is on hold. It will not convert until the hold is released or {{date, date}} passes.",
+          "heldUntilWithoutId": "Draft order is on hold. It will not convert until the hold is released or {{date, date}} passes.",
+          "released": "Hold released {{id}}. converts once every stage clears",
+          "releasedWithoutId": "Hold released. converts once every stage clears"
+        }
+      },
+      "empty": {
+        "title": "No products yet",
+        "sub": "Add products on step 3 and they show here with their art, sizes and prices.",
+        "action": "Go to Products"
+      },
+      "orderName": "Order name",
+      "description": "Order description",
+      "brands": "Brands",
+      "programCodes": "Program codes",
+      "split": {
+        "title": "Orders from this draft",
+        "sub": "Each selected brand becomes a separate order when the draft converts.",
+        "empty": "Nothing to convert yet: add a product with a quantity."
+      },
+      "total": {
+        "title": "Order total",
+        "sub": "Garments, decoration, art and license, fees, discounts and tax: the one formula the customer page and the documents use.",
+        "lines": {
+          "garments": "Garments",
+          "royalty": "Royalty (in the garment prices)",
+          "artLicense": "Art and license",
+          "decoration": "Decoration",
+          "decorationUnits_one": "Decoration · {{count}} unit",
+          "decorationUnits_other": "Decoration · {{count}} units",
+          "tax": "Sales tax ({{rate, percent(maximumFractionDigits: 2)}})"
+        },
+        "discount": {
+          "label": "Discount / program code",
+          "scope": "· applies to all lines",
+          "placeholder": "Discount or program code · e.g. CCP, SPRING10",
+          "apply": "Apply",
+          "unavailable": "Discount validation and price adjustments are not available yet."
+        },
+        "included": "already included in unit price",
+        "grandTotal": "Order total",
+        "total" : "Total"
+      },
+      "locks": {
+        "title": "Lock",
+        "sub": "The sales rep locks on the customer's behalf once the sign-off is recorded. The lock creates the ERP quote and tells Art Production.",
+        "approvalTitle": "Customer art & quantity approval",
+        "approvalSub": "The sales rep locks both on the customer's behalf · one customer touch (this is check #1 on the workflow tracker). Production can't start until both are locked.",
+        "customer_art": {
+          "title": "Final art locked",
+          "description": "Approve the final art on the customer's behalf",
+          "action": "Lock art"
+        },
+        "quantity": {
+          "title": "Quantity & inventory locked",
+          "description": "Confirm per-size quantities and lock inventory",
+          "action": "Lock quantity"
+        },
+        "handoff": {
+          "title": "You're done · hand-off to Art Production & Licensing",
+          "description": "Lock final art (the full bundle · garment, art, decoration) and per-size quantities above; then your job is done until Art Production & Licensing finish their checks.",
+          "complete": "✓ Cleared to production",
+          "completeDescription": "Nothing more needed from you. Art Production and Licensing run their checks next · you'll only return for Sales Production Approval, and you contact the customer only if their changes are drastic."
+        },
+        "locked": "Locked",
+        "lockedBy": "Locked by {{name}}",
+        "toast": {
+          "art": {
+            "locked": "Final art locked",
+            "removed": "Art locked removed"
+          },
+          "quantity": {
+            "locked": "Quantity & inventory locked",
+            "removed": "Quantity lock removed"
+          }
+        },
+        "awaiting": "Awaiting art + quantity lock",
+        "awaitingQuantity": "Awaiting quantity lock",
+        "awaitingArt": "Awaiting art lock",
+        "unavailable": "Locking is unavailable until final artwork, per-size quantities and inventory are connected.",
+        "submitTitle": "Submit this draft order to Art Production",
+        "submitDescription": "Submitting locks the final art and the quantities on every product card and sends the order into the Art Production & Licensing queue. You won't need to do anything else · it passes straight to production unless Art Production or Licensing makes a significant change, in which case you'll be asked for Sales Production Approval (and can choose whether to notify the customer).",
+        "submitButton": "Lock art + quantity & submit to Art Production",
+        "submitDialog": {
+          "eyebrow": "Send to Art Production",
+          "title": "Submit to Art Production",
+          "description": "Send the art and style details to Art Production to check production feasibility.",
+          "close": "Close",
+          "approver": "Approver",
+          "proofReader": "Proof reader",
+          "searchApprover": "Search approver",
+          "searchProofReader": "Search proof reader",
+          "noStaffFound": "No staff found",
+          "loadingStaff": "Loading staff...",
+          "staffLoadError": "Could not load Shopify staff.",
+          "retryStaff": "Retry",
+          "optionCount_one": "{{count}} option",
+          "optionCount_other": "{{count}} options",
+          "shopOwner": "Shop owner",
+          "you": "You",
+          "messageLabel": "Message to Art Production",
+          "messagePlaceholder": "Notes for Art Production",
+          "effectsTitle": "What submitting does",
+          "effects": {
+            "locks": "Locks the final art and the quantities on every product card, for the customer",
+            "queues": "Sends 1 config into the Art Production and Licensing queue",
+            "quote": "Creates the ERP quote (simulated)",
+            "production": "It passes straight to production unless Art Production or Licensing makes a significant change, which comes back to you for Sales production approval"
+          },
+          "cancel": "Cancel",
+          "submit": "Submit to Art Production"
+        },
+        "approvalGate": {
+          "title": "Skip customer approval?",
+          "description": "Submitting locks the art and the quantities for <strong>{{customer}}</strong>. 1 line has no customer approval on record. Confirm both, then say how they approved it.",
+          "customerFallback": "this customer",
+          "sameDesign": "The customer already approved this exact design: style, colorway, art, placement and method.",
+          "noChanges": "Nothing is changing: what you see is what gets produced.",
+          "howTitle": "How did they approve?",
+          "methods": {
+            "email": "Email",
+            "call": "Call",
+            "inPerson": "In person",
+            "textPortal": "Text or portal"
+          },
+          "referenceLabel": "Reference",
+          "optional": "optional",
+          "referencePlaceholder": "e.g. email from Tanya 9/23, call with Dan",
+          "cancel": "Cancel",
+          "sendForApproval": "Send for approval instead",
+          "confirm": "Yes, submit to Art Production"
+        }
+      },
+      "workflow": {
+        "title": "Workflow status",
+        "progress": "{{cleared}} of {{total}} cleared · Next: {{stage}}",
+        "allCleared": "{{cleared}} of {{total}} cleared",
+        "refresh": "Refresh",
+        "refreshHelp": "Pull the latest status of every stage",
+        "saveDraftTooltip": "Save the draft order to open its workflow",
+        "opensStageTooltip": "Opens its details",
+        "stepTooltipTitle": "Step-{{step}} {{title}}",
+        "stageTooltipDescription": "{{description}} {{opens}}",
+        "startsOnSend": "Starts when the proposed order goes to the customer",
+        "startsAfterApproval": "Starts after the customer approves",
+        "startsAfterPrevious": "Starts when the stage before it clears",
+        "predecessor": "Starts when the stage before it clears",
+        "finalApprovalNote": "The customer approves the final art, or the rep approves for them",
+        "owner": "{{owner}} · {{team}}",
+        "automatic": "Automatic credit check",
+        "stageAriaLabel": "Stage {{n}}, {{name}}, {{state}}, {{note}}",
+        "drawer": {
+          "stage": "Stage {{current}} of {{total}}",
+          "close": "Close stage details",
+          "customerArtDescription": "Do they love the design? The customer approves each line's art on the approval link, or the rep approves it for them.",
+          "quantityDescription": "Every line's quantities are locked, entered by the customer on the link or by the rep and confirmed.",
+          "licenseDescription": "The licensor approves the art. Licensing is last in the art chain: a customer change after it sends the art back through Art Production and Licensing.",
+          "finalApprovalDescription": "The customer approves the final art, or the rep approves for them",
+          "capacityDescription": "A plant slot is assigned against the in-hands date.",
+          "pricingDescription": "Pricing and margin are approved.",
+          "financialDescription": "Credit, terms and the credit limit are clear.",
+          "productionStatus": "Production status",
+          "productionOwner": "Production owner",
+          "bundleCount_one": "{{count}} bundle",
+          "bundleCount_other": "{{count}} bundles",
+          "artFilesUnavailable": "Art files not loaded",
+          "productionLine": "Bundle {{line}} · {{sku}}",
+          "garmentTag": "GARMENT {{sku}}",
+          "artTag": "ART {{code}}",
+          "decorationTag": "DECO {{method}}",
+          "sourcePlacementUnavailable": "Source garment art placement unavailable",
+          "decorationMethod": "Decoration method",
+          "embellishment": "Embellishment",
+          "embellishmentUnavailable": "Not set",
+          "productionFile": "Production-ready file · DAM URL(s)",
+          "fileUnavailable": "Production file not loaded",
+          "checks": {
+            "decorationFeasible": "Decoration feasible on garment",
+            "artWithinImprint": "Art within imprint size",
+            "colorsValid": "Colors / ink valid",
+            "vectorFileReady": "Production-ready vector file",
+            "licenseValid": "License valid · not expired"
+          },
+          "detailsFilesHistory": "Details, files & history",
+          "filesHistoryUnavailable": "Files and art history are not available yet.",
+          "kickBack": "Kick back to sales rep",
+          "approveLicensing": "Approve & send to Licensing",
+          "stageActionsUnavailable": "Stage actions are unavailable until production workflow is connected.",
+          "inventoryDescription": "Available to promise is confirmed for every size.",
+          "description": "Details and current status for this workflow stage.",
+          "approvalCount": "{{approved}} of {{total}} approved",
+          "lockedCount": "{{locked}} of {{total}} locked",
+          "licensingReadyCount": "Starts after the customer approves · {{ready}} of {{total}} arts ready for licensing",
+          "owner": "Owner",
+          "ownerUnset": "Not assigned",
+          "timing": "Timing",
+          "draftOrder": "Draft order",
+          "draftOrderValue": "{{orderId}} · v{{version}} · {{customer}}",
+          "unsaved": "Not saved yet",
+          "stepDetail": "Step detail",
+          "approvalLink": "Approval link",
+          "notSent": "Not sent yet",
+          "customerApprover": "Customer approver",
+          "approverUnset": "Not set",
+          "finalArt": "Final art",
+          "locked": "Locked",
+          "notLocked": "Not locked yet",
+          "quantities": "Quantities",
+          "total": "Total",
+          "totalUnits": "{{units}} units across {{bundles}} bundles",
+          "artsReadyForLicensing": "Arts ready for licensing",
+          "readyTotal": "{{ready}} of {{total}}",
+          "royalty": "Royalty",
+          "royaltyValue": "{{rate, percent}} in the garment price (internal)",
+          "turnaround": "Turnaround",
+          "licensingTurnaround": "5 to 10 business days",
+          "licensingArtChangedTitle": "Did Licensing change the art?",
+          "licensingArtChangedDescription": "Then stage 5 reopens: the customer approves the final art again, on their approval link.",
+          "lines": "Lines",
+          "rule": "Rule",
+          "finalApprovalRule": "Every flagged change is approved or removed, and no revision is open",
+          "approvedForCustomer": "Approved for the customer",
+          "approveForCustomer": "Approve for the customer",
+          "noteForRecord": "Note for the record",
+          "noteForRecordPlaceholder": "For example: verbal OK on the call, Sep 29",
+          "approveAllForCustomer": "Approve all for the customer",
+          "approvedAllForCustomer": "Approved all for the customer",
+          "inventoryDemand": "{{quantity}} needed · {{sku}}",
+          "viewAtp": "View available to promise",
+          "atpTitle": "Available to promise",
+          "atpUnavailable": "Live available-to-promise inventory is not connected to this draft yet.",
+          "requestedSizes": "Requested sizes",
+          "requestedQuantity": "{{quantity}} needed",
+          "customerRequested": "Customer requested",
+          "soonestShip": "Soonest ship",
+          "pace": "Pace",
+          "onTrack": "On track",
+          "atRisk": "At risk",
+          "formattedDate": "{{date, date}}",
+          "capacityLineDetail_one": "{{method}} · {{count}} unit",
+          "capacityLineDetail_other": "{{method}} · {{count}} units",
+          "pricingLineAmounts": "Unit {{unit}} · line {{line}}",
+          "orderTotal": "Order total",
+          "discounts": "Discounts",
+          "noDiscounts": "None",
+          "terms": "Terms",
+          "credit": "Credit",
+          "creditUnavailable": "Status not available",
+          "line": "Line",
+          "whatChanged": "What changed",
+          "whatChangedPlaceholder": "For example: the crest is 1 color now, to hold on the heather",
+          "artChanged": "The art changed",
+          "licenseReopened": "Stage 5 reopened for customer art approval.",
+          "approve": "Approve",
+          "lineTitle": "Line {{line}} · {{name}}",
+          "auditLog": "Audit log",
+          "auditEmpty": "No activity yet. Approve or reject below to add the first entry.",
+          "reject": "Reject (comment required)",
+          "rejectUnavailable": "Rejection is unavailable until comment saving is implemented.",
+          "lockFinalArt": "Lock the final art",
+          "artLockedToast": "Customer art approved. locked in the audit",
+          "quantitiesLockedToast": "Quantity approval approved. logged in the audit",
+          "artLocked": "Final art locked",
+          "lockQuantities": "Lock the quantities",
+          "quantitiesLocked": "Quantities locked"
+        }
+      },
+      "comments": {
+        "title": "Order comments",
+        "sub": "Each comment prints on its own document: art, manufacturing, invoice and order acknowledgement.",
+        "toggle": "Order comments",
+        "optional": "optional",
+        "none": "None",
+        "count_one": "{{count}} comment",
+        "count_other": "{{count}} comments",
+        "shipExact": "Ship exact",
+        "art": {
+          "label": "Art",
+          "placeholder": "Notes for the art / production team"
+        },
+        "manufacturing": {
+          "label": "Manufacturing",
+          "placeholder": "e.g. event hand-out · ship exact counts"
+        },
+        "invoice": {
+          "label": "Invoice",
+          "note": "prints on the invoice",
+          "placeholder": "Text to print on the customer invoice"
+        },
+        "acknowledgement": {
+          "label": "Order acknowledgement",
+          "note": "prints on the ack",
+          "placeholder": "Text to print on the order acknowledgement"
+        }
+      },
+      "notes": {
+        "title": "Notes",
+        "sub": "What was noted on this draft, and every email sent from it with its attachments.",
+        "threadTitle": "Notes",
+        "entriesCount": "4 entries",
+        "empty": "Nothing yet. Notes, requests and decisions show here as they happen.",
+        "emailsSent": "Emails sent from this draft · 0",
+        "emailsEmpty": "Nothing sent yet. Emails go out from the send sheet, with the PDF attached, and every customer email copies the rep."
+      },
+      "outbox": {
+        "title": "Emails",
+        "sub": "Every email sent from this draft with its attachments.",
+        "sentCount_one": "Emails sent from this draft · {{count}}",
+        "sentCount_other": "Emails sent from this draft · {{count}}",
+        "empty": "Nothing sent yet. Emails go out from the send sheet, with the PDF attached, and every customer email copies the rep.",
+        "emailMeta": "{{date, date(dateStyle: medium)}} · {{count}} attachments"
+      },
+      "auditlog": {
+        "title": "Audit log",
+        "sub": "Every manager decision, request and override on this draft.",
+        "empty": "Nothing yet. Requests, decisions and overrides show here as they happen."
+      },
+      "documents": {
+        "ariaLabel": "Document",
+        "confirmation": "Order confirmation",
+        "summary": "Proposed order"
+      },
+      "confirmation": {
+        "ariaLabel": "Order confirmation",
+        "title": "Order confirmation",
+        "order": "Order",
+        "promiseDate": "Promise date",
+        "artwork": "Artwork",
+        "approvalLine": "Line {{number}} · {{name}}",
+        "approved": "Approved",
+        "approvedOn": "Approved on {{date, date(dateStyle: medium; timeZone: UTC)}}",
+        "footer": "This is your order confirmation. Your invoice follows from our billing system once the order ships. Changes from here go through our order team.",
+        "companyFooter": "Unrivaled Teamwear · An Ames Watson company"
+      },
+      "print": {
+        "ariaLabel": "Proposed order",
+        "title": "Proposed order",
+        "reference": "Reference",
+        "referenceValue": "{{type}} · v{{version}}",
+        "referenceDraft": "{{id}} · v{{version}}",
+        "type": {
+          "new": "new",
+          "reorder": "reorder"
+        },
+        "dateLabel": "Date",
+        "date": "{{date, date(dateStyle: medium; timeZone: UTC)}}",
+        "validUntil": "Valid until",
+        "billTo": "Bill to",
+        "shipTo": "Ship to",
+        "shipToPending": "To be confirmed",
+        "rep": "Your rep",
+        "repPending": "Unassigned",
+        "status": "Status",
+        "terms": "Terms",
+        "units": "Units",
+        "brands": "Brands: {{brands}}",
+        "columns": {
+          "number": "#",
+          "item": "Item",
+          "artDecoration": "Art and decoration",
+          "sizes": "Sizes",
+          "quantity": "Qty",
+          "unitPrice": "Unit price",
+          "lineTotal": "Line total"
+        },
+        "noItems": "No items yet.",
+        "total": "Total",
+        "approvalSummary": "Approval summary",
+        "footer": "This is your proposed order, for your information. Approve the art and the quantities on your approval link; the order is confirmed once everything is approved.",
+        "companyFooter": "Unrivaled Teamwear · Proposed order"
+      }
+    },
+    "foot": {
+      "back": "Back",
+      "backTooltip": "Back to {{step}}",
+      "notSaved": "Not saved yet",
+      "saved": "Saved just now",
+      "saving": "Saving…",
+      "saveDraft": "Save draft",
+      "saveDraftTooltip": "Save draft (Command + S)",
+      "next": "Next: {{step}}",
+      "nextTooltip": "Go to {{step}} (Command and Return)",
+      "send": "Send for customer approval"
+    },
+    "overview": {
+      "eyebrow": "Draft order",
+      "newDraft": "New draft",
+      "version": "Version",
+      "saved": "Saved",
+      "validUntil": "Valid until",
+      "date": "{{date, date(dateStyle: medium; timeZone: UTC)}}",
+      "numberHint": "The number is assigned when you save the draft.",
+      "customer": "Customer",
+      "orderType": "Order type",
+      "newOrder": "New order",
+      "interface": "Interface",
+      "notSet": "Not set",
+      "brands": "Brands",
+      "targetDelivery": "Target delivery",
+      "status": "Status",
+      "products": "Products",
+      "productsValue": "{{bundles}} · {{units}}",
+      "bundles_one": "{{count}} bundle",
+      "bundles_other": "{{count}} bundles",
+      "units_one": "{{count}} unit",
+      "units_other": "{{count}} units",
+      "shipTo": "Ship-to",
+      "addresses_one": "{{count}} address",
+      "addresses_other": "{{count}} addresses",
+      "nextBestAction": "Next best action",
+      "nextActions": {
+        "ordername": "Name the order",
+        "description": "Describe the order",
+        "classification": "Choose the order type",
+        "interface": "Choose the order type",
+        "noProducts": "Add products",
+        "noQuantity": "Add sizes to a line",
+        "needsSizes": "Add sizes to a line",
+        "belowMinimum": "Add more to the card",
+        "locks": "Lock art and quantities"
+      },
+      "needsAttention": "Needs attention",
+      "blockSending_one": "{{count}} item blocks sending.",
+      "blockSending_other": "{{count}} items block sending.",
+      "estimate": "Estimate",
+      "garments": "Garments",
+      "decoration": "Decoration",
+      "artLicense": "Art & license",
+      "subtotal": "Subtotal",
+      "tax": "Tax ({{rate, percent(maximumFractionDigits: 2)}})",
+      "total": "Total",
+      "money": "{{value, currency}}",
+      "royaltyIncluded": "Royalty of {{rate, percent}} is included in the garment prices.",
+      "workflow": "Workflow",
+      "cleared": "{{cleared}} of {{total}} cleared",
+      "stage": "Stage {{n}} · {{state}}",
+      "stageStates": {
+        "queued": "Queued",
+        "active": "In progress",
+        "passed": "Passed",
+        "blocked": "Blocked",
+        "na": "Not needed"
+      },
+      "stages": {
+        "customer_art": "Customer art approval",
+        "quantity": "Quantity approval",
+        "art_production": "Art production",
+        "license": "License",
+        "final_approval": "Sales production approval",
+        "inventory": "Inventory",
+        "capacity": "Capacity",
+        "pricing": "Pricing",
+        "financial": "Financial"
+      }
+    },
+    "errors": {
+      "customerRequired": "Choose a customer.",
+      "inHandsRequired": "Choose an in-hands date.",
+      "dateInvalid": "Choose a valid date.",
+      "deliveryLocationNameRequired": "Enter a location title.",
+      "deliveryStateInvalid": "Enter a two-letter state code.",
+      "deliveryZipInvalid": "Enter a valid ZIP code.",
+      "deliveryPostalCodeInvalid": "Enter a valid postal code for this country.",
+      "notBeforeRequired": "Choose the not-before date.",
+      "deliveryWindowInvalid": "The delivery end date must be on or after the start date.",
+      "deliveryDestinationRequired": "Choose a saved ship-to or enter a new delivery address.",
+      "companyLocationAccessRequired": "The Shopify app needs write access to company locations. Update the app permissions and reinstall it.",
+      "companyLocationCreateFailed": "The delivery location could not be saved to the customer account. Try again.",
+      "companyLocationNotAllowed": "You don't have access to add locations for this customer.",
+      "companyLocationDeleteNotAllowed": "This location doesn't belong to the selected customer or is no longer available.",
+      "companyLocationDefaultCannotDelete": "Change the customer's default ship-to before deleting this location.",
+      "companyLocationDeleteInUse": "Remove this location from other delivery and bill-to fields before deleting it.",
+      "companyLocationDeleteFailed": "The saved location could not be deleted. Try again.",
+      "companyLocationDefaultFailed": "The location was saved, but the default ship-to could not be updated.",
+      "deliveryAddressRequired": "Enter an address line 1.",
+      "deliveryCityRequired": "Enter a city.",
+      "deliveryCountryRequired": "Choose a country.",
+      "deliveryStateRequired": "Enter a state.",
+      "deliveryZipRequired": "Enter a ZIP code.",
+      "inHandsTooSoon": "Pick a date on or after the soonest possible date.",
+      "brandsRequired": "Pick at least one brand.",
+      "interfaceRequired": "Choose the interface: it sets how each new bundle opens.",
+      "eventNameRequired": "An event date needs an event name.",
+      "orderNameRequired": "Name the order: a label for you, searchable in your draft orders.",
+      "descriptionRequired": "Add a description: the customer sees it on the proposed order.",
+      "tooLong": "Keep this shorter.",
+      "saveFailed": "The draft could not be saved. Try again.",
+      "referenceSaveFailed": "The draft is saved, but the program code, classification or interface did not save. Check them and save again."
+    },
+    "products": {
+      "productCount_one": "{{count}} product",
+      "productCount_other": "{{count}} products",
+      "ai": "Start with art",
+      "add": "Add product",
+      "emptyTitle": "No lines yet",
+      "createWithAi": "Create with AI",
+      "startWithAi": "Start with Create with AI",
+      "drawerLine": "Line {{number}}",
+      "findItem": "Find by item number",
+      "itemPlaceholder": "UM0750 410 or UM0750-410",
+      "itemHint": "An item number, or an item number and its colour code.",
+      "closeDrawer": "Close add product",
+      "emptyDescription": "Pick a style from the catalog, or start with Create with AI.",
+      "sizes": "Sizes",
+      "sizesHint": "Add the sizes: type a quantity and press Tab for the next size.",
+      "sizeQuantity": "{{name}} — size {{size}} quantity",
+      "decreaseSize": "Decrease {{size}}",
+      "increaseSize": "Increase {{size}}",
+      "moqRemaining_one": "{{count}} to go · {{quantity}} of {{minimum}}",
+      "moqRemaining_other": "{{count}} to go · {{quantity}} of {{minimum}}",
+      "availabilityOnRequest": "Availability on request",
+      "changeGarment": "Change garment",
+      "viewAvailability": "View availability",
+      "productCard": "Product card",
+      "buildInSpectrum": "Build in Spectrum",
+      "duplicateInColor": "Duplicate in color",
+      "comments": "Product comments",
+      "lineDetails": "Order line details",
+      "pricing": "Pricing",
+      "quantity": "Quantity",
+      "lineTotal": "Line subtotal",
+      "pricingHint": "Catalog pricing. Tax is estimated in the order overview.",
+      "charges": "Additional charges",
+      "noCharges": "No additional charges on this bundle.",
+      "repsOnlyNote": "Reps only. The customer sees the unit price and the totals, never the breakdown or the royalty.",
+      "tabsLabel": "Show",
+      "tabBundles": "Bundles",
+      "tabQuickEntry": "Quick entry",
+      "summary": "{{cards}} · {{garments}} · {{units}} · {{total}}",
+      "addSizesTag": "Add sizes",
+      "belowMinimumTag": "Below minimum",
+      "aiRender": "AI render",
+      "cancel": "Cancel",
+      "addDescription": "Start a bundle, reuse one, or pick styles from Products.",
+      "newBundle": "Start a new bundle",
+      "newBundleDescription": "Pick a garment from the catalog, then add art, sizes and pricing.",
+      "reuseBundle": "Reuse a previous bundle",
+      "reuseBundleDescription": "Reuse a bundle from this customer’s draft orders, with the garment and art kept.",
+      "pick": "Pick from Products",
+      "pickDescription": "Shop styles on the Products page, then Add to draft order and choose this one.",
+      "loadError": "The selected products could not be loaded. They may be unavailable or missing a price. Return to Products and try again.",
+      "selectError": "Select at least one product, with no more than 100 products at a time.",
+      "savedLocally": "Changes retained in this tab",
+      "saveQuantityError": "Enter at least one size quantity for every product before saving.",
+      "savingProducts": "Adding selected products…",
+      "lineTitle": "Line {{number}} · {{name}}",
+      "cardNumber": "Card {{number}}",
+      "artNotChosen": "Art not chosen yet",
+      "needsArtTag": "Needs art",
+      "moqStrip": "MOQ {{minimum}}",
+      "moqProgress": "{{quantity}} of {{minimum}}",
+      "moqProgressToGo": "{{quantity}} of {{minimum}} · {{remaining}} to go",
+      "moqNoteBody": "The minimum of {{minimum}} is the program default for {{method}} and counts every garment of this card. Convert waits until the card meets it.",
+      "readyStatus": "Ready",
+      "details": "Details",
+      "detailsColor": "Garment color",
+      "detailsType": "Garment type",
+      "detailsStyle": "Style / garment #",
+      "detailsCustomerSku": "Customer SKU",
+      "detailsOptional": "optional",
+      "detailsTypePlaceholder": "e.g. Crew",
+      "detailsCustomerSkuPlaceholder": "customer’s code",
+      "moqUnset": "MOQ not set",
+      "notSetYet": "Not set yet",
+      "vasLabel": "VAS and finishing",
+      "vasNo": "No",
+      "vasYes": "Yes",
+      "interface": "Interface",
+      "interfaceGarmentArt": "Garment + art",
+      "interfaceArtOnly": "Art only",
+      "interfaceBlank": "Garment only",
+      "art": "Art and decoration",
+      "artSummaryNone": "No art yet",
+      "artCount_one": "{{count}} art",
+      "artCount_other": "{{count}} arts",
+      "artSummaryLicensed_one": "{{count}} art · Licensed",
+      "artSummaryLicensed_other": "{{count}} arts · Licensed",
+      "artTileMeta": "{{sku}} · {{placement}}",
+      "artLicensed": "Licensed",
+      "artMetaLicensed": "{{sku}} · Licensed",
+      "artEditWithAi": "Edit with AI",
+      "artSubmitProduction": "Submit for Art Production",
+      "artAttachVector": "Attach a vector refer-to",
+      "brief": "Brief for {{name}}",
+      "briefPlacement": "Art placement",
+      "briefSize": "Art size",
+      "briefSizePlaceholder": "For example 5 x 5 in",
+      "briefProcess": "Process method",
+      "briefProcessCode": "Process code",
+      "briefReferTo": "Refer to",
+      "briefDerives": "What this art derives from",
+      "briefDerivesPlaceholder": "Art number or file name",
+      "briefDerivesHelp": "Attach the vector itself with Attach a vector refer-to above.",
+      "briefInk": "Ink or thread sequence",
+      "briefInkSequence": "Ink or thread sequence",
+      "briefInkArtist": "Artist's choice",
+      "briefInkChip": "{{number}} · {{name}}",
+      "briefInkPlaceholder": "Add an ink, then Return",
+      "briefInkHelpEmpty": "No inks yet: add them in screen-print order.",
+      "briefInkHelpSet": "In screen-print order.",
+      "briefRemoveInk": "Remove {{name}}",
+      "briefArtistHelp": "The artist chooses the inks at production.",
+      "briefPairs": "Adds and omits",
+      "briefOptional": "Optional",
+      "briefPairBoth": "Omit {{omit}} · Add {{add}}",
+      "briefPairOmit": "Omit {{name}}",
+      "briefPairAdd": "Add {{name}}",
+      "briefRemovePair": "Remove this pair",
+      "briefOmit": "What to omit",
+      "briefAddInstead": "Add instead",
+      "briefTo": "to",
+      "briefAddPair": "Add pair",
+      "briefMessage": "Comment for the render and Art Design",
+      "briefMessagePlaceholder": "What to keep and what to change. This is also the AI prompt.",
+      "briefNotSet": "Not set",
+      "artTilesLabel": "Arts on Line {{number}}",
+      "newArtwork": "New artwork",
+      "newArtworkHint": "Design or upload it in Create with AI",
+      "quickPick": "Quick pick",
+      "quickPickHint": "Customer and popular marks",
+      "artEmpty": "No art on this bundle yet. Pick a mark with Quick pick, or design one with New artwork.",
+      "renderSummary": "Not rendered yet",
+      "renderWith": "Render with AI",
+      "renderHint": "Renders open Create with AI on this line. Nothing is billed until you press Render there.",
+      "setPrices": "Set the prices",
+      "summaryNone": "None",
+      "headerDefaults": "Header defaults",
+      "priceSummary": "Unit {{unit}} · Line {{line}}",
+      "removeLine": "Remove {{name}}",
+      "railItemLabel": "{{title}}, {{status}}",
+      "railStatus": "{{status}} · {{units}}",
+      "cardCount_one": "{{count}} card",
+      "cardCount_other": "{{count}} cards",
+      "garmentCount_one": "{{count}} garment",
+      "garmentCount_other": "{{count}} garments",
+      "moqSourceProgram": "program default",
+      "topUp": "Add {{count}} to {{name}}",
+      "topUpPreview": "Adds {{count}} to {{name}}, spread over its sizes",
+      "topUpReaches": "Card {{number}} reaches {{after}} of {{minimum}}.",
+      "topUpReachesMet": "Card {{number}} reaches {{after}} of {{minimum}} and meets its minimum.",
+      "topUpCancel": "Cancel",
+      "notValidated": "Not validated · needs approval",
+      "overrideMinimum": "Override the minimum",
+      "workflowTitle": "Workflow status",
+      "workflowSummary": "{{cleared}} of {{total}} cleared",
+      "dotsCleared": "{{cleared}} of {{total}} cleared",
+      "dotsLabel": "Workflow status: {{cleared}} of {{total}} cleared. {{list}}. Opens the workflow status.",
+      "dotItem": "{{n}} {{name}} {{state}}",
+      "markDone": "Cleared",
+      "markNa": "Not needed",
+      "markFlag": "Flagged",
+      "markProg": "In progress",
+      "markDoneLabel": "cleared",
+      "markNaLabel": "not needed",
+      "markFlagLabel": "flagged",
+      "markProgLabel": "in progress",
+      "stageTitle": "{{n}} · {{name}}",
+      "stageSubFinalApproval": "The customer approves the final art, or the rep approves for them",
+      "stageWorkedIn": "Worked in: {{where}}",
+      "stageWorkedInOwner": "Worked in: {{where}} · {{owner}}",
+      "stageShort": "Short of the minimum: {{total}} of {{moq}}, {{remaining}} to go ({{source}})",
+      "stageNa": "Not needed for this card",
+      "stageChecked": "Checked for this card",
+      "stageOpen": "Open the stage",
+      "stageGoTo": "Go to the {{where}}",
+      "stageViewAvailability": "View availability",
+      "workflowNote": "A stage is clear for this card when it is clear for every garment on it; not needed counts as clear.",
+      "convertWaitsMinimum": "Convert waits on the minimum: {{remaining}} to go ({{total}} of {{moq}}).",
+      "convertWaitsMinimumThen": "Convert waits on the minimum: {{remaining}} to go ({{total}} of {{moq}}), then {{stages}}.",
+      "convertWaitsStages": "Converts with the draft once every stage clears, or on its own once these clear: {{why}}.",
+      "convertWaitsApproval": "the customer's approval",
+      "readyTitle": "Ready to become an order",
+      "readyBody": "All nine stages are clear · one order for {{whom}}. Or leave it on the draft: it converts with the rest.",
+      "convertCard": "Convert this card to an order",
+      "footUnitsEach": "{{units}} × {{unit}}",
+      "pricingGarment": "Garment",
+      "pricingArt": "Art",
+      "pricingDecoration": "Decoration, each",
+      "pricingAdders": "Adders",
+      "pricingNone": "None",
+      "pricingUnitTotal": "Unit total",
+      "pricingQtyUnit": "Quantity × unit",
+      "pricingLineTotal": "Line total",
+      "pricingNote": "Reps only. The customer sees the unit price and the totals, never the breakdown or the royalty. Set a garment's prices in its Set the prices section.",
+      "cardPricingSummary": "{{units}} units · {{total}}",
+      "cardTotalLabel": "Card total",
+      "cardFootTotal": "{{units}} units · Card total {{total}}",
+      "where": {
+        "customerApprovals": "Customer approvals",
+        "sales": "Sales",
+        "artProductionQueue": "Art Production queue",
+        "licenseQueue": "License queue",
+        "availability": "Availability",
+        "plantScheduling": "Plant scheduling",
+        "salesLeadership": "Sales leadership",
+        "finance": "Finance"
+      },
+      "owner": {
+        "artDesign": "Art Design",
+        "sales": "Sales",
+        "artProduction": "Art Production",
+        "licensing": "Licensing",
+        "operations": "Operations",
+        "finance": "Finance"
+      },
+      "noteCount_one": "{{count}} note",
+      "noteCount_other": "{{count}} notes",
+      "docs": {
+        "art": {
+          "label": "Art",
+          "tag": "Prints on the art sheet",
+          "placeholder": "Notes for the art and production team"
+        },
+        "mfg": {
+          "label": "Manufacturing",
+          "tag": "Prints on the work order",
+          "placeholder": "For example: event hand-out, ship exact counts"
+        },
+        "invoice": {
+          "label": "Invoice",
+          "tag": "Prints on the customer invoice",
+          "placeholder": "Text to print on the invoice"
+        },
+        "ack": {
+          "label": "Order acknowledgement",
+          "tag": "Prints on the order acknowledgement",
+          "placeholder": "Text to print on the order acknowledgement"
+        },
+        "packing": {
+          "label": "Packing list",
+          "tag": "Prints on the packing list",
+          "placeholder": "Text to print on the packing list"
+        }
+      },
+      "shipExact": "Ship exact",
+      "commentsNote": "One note per card: it prints on every garment of the card. Rep-only labels, such as the order name and the art name, never print on a customer document.",
+      "opt": {
+        "shipDate": "Ship date",
+        "po": "PO number",
+        "shipIndicator": "Ship indicator",
+        "notBefore": "Not before",
+        "shipVia": "Ship via",
+        "inHandsDate": "In-hands date",
+        "eventName": "Event name",
+        "discountCode": "Discount code",
+        "shipCode": "Ship code",
+        "chooseDate": "Choose a date",
+        "openCalendar": "Open the calendar: {{label}}",
+        "headerDate": "Header: {{date, date(dateStyle: medium; timeZone: UTC)}}",
+        "usesHeader": "Uses the header",
+        "headerNotSet": "Header: not set",
+        "poPlaceholder": "Optional",
+        "poHelp": "Optional: the header PO applies",
+        "indicatorSip": "SIP · ship as soon as possible",
+        "indicatorNb": "Not before a date",
+        "indicatorHelp": "How the plant releases it",
+        "notBeforeHelp": "The first day it may ship",
+        "notBeforeError": "Pick the not-before date",
+        "viaHeader": "Header: {{via}}",
+        "viaHelp": "Ground unless the card needs it sooner",
+        "headerVia": "Ground",
+        "eventPlaceholder": "For example Homecoming 2027",
+        "optional": "Optional",
+        "discountPlaceholder": "For example SPRING10",
+        "discountHelp": "Optional: this card only",
+        "shipCodePlaceholder": "SIP or NB4",
+        "splitDefault": "Uses the header: this card converts into its own order with the header's PO and ship date.",
+        "splitDiff_one": "Converts into its own order, like every card. Its {{list}} differs from the header.",
+        "splitDiff_other": "Converts into its own order, like every card. Its {{list}} differ from the header.",
+        "summaryOwn": "Own {{list}}",
+        "diff": {
+          "shipDate": "ship date",
+          "po": "PO",
+          "shipIndicator": "ship indicator",
+          "notBefore": "not-before date",
+          "shipVia": "ship via",
+          "inHandsDate": "in-hands date",
+          "eventName": "event name",
+          "discountCode": "discount code",
+          "shipCode": "ship code"
+        },
+        "and": "and"
+      },
+      "prices": {
+        "garment": "Garment $",
+        "garmentTag": "SSRP",
+        "art": "Art $",
+        "artTag": "royalty / fee",
+        "decoration": "Decoration $",
+        "decorationTag": "per unit",
+        "adder": "Adder $",
+        "adderTag": "per unit",
+        "retail": "Retail $",
+        "retailTag": "SRP",
+        "prefix": "$"
+      },
+      "license": {
+        "title": "License",
+        "skips": "No license: skips Licensing",
+        "shipTo": "{{name}} carries no license",
+        "noShipTo": "No ship-to license",
+        "none": "No license on this art. It skips Licensing after Art Production.",
+        "add": "Add a license",
+        "count_one": "{{count}} license of {{max}} at most",
+        "count_other": "{{count}} licenses of {{max}} at most"
+      },
+      "addGarment": "Add a garment to this card",
+      "storageError": "Your browser could not retain this draft. Enable session storage before opening Products.",
+      "sign": {
+        "onTrack": "On track",
+        "atRisk": "At risk",
+        "atRiskTitle": "At risk for the in-hands date",
+        "onTrackBody": "Ready by {{ready, date(dateStyle: medium; timeZone: UTC)}}, in time for {{inHands, date(dateStyle: medium; timeZone: UTC)}}.",
+        "atRiskBody": "Soonest ready: {{date, date(dateStyle: medium; timeZone: UTC)}}. A road sign only: nothing is blocked."
+      },
+      "approval": {
+        "none": "No approval yet",
+        "customerNone": "No customer approval yet",
+        "flag": "Flag for customer approval",
+        "approve": "Approve on the customer's behalf"
+      },
+      "requestDesignHint": "Need the design team? A new custom design, or a name drop on this line's art.",
+      "requestDesign": "Request a design",
+      "blankCardTitle": "Card {{number}} · Blank garments",
+      "bundleCardTitle": "Card {{number}} · Art not chosen yet",
+      "blankGarments": "Blank garments",
+      "blankDescription": "No decoration on this card: every garment ships blank.",
+      "blankSummary": "{{count}} garments · {{units}} units",
+      "garments": "Garments",
+      "oneArtBrand": "one art, one brand",
+      "blank": "Blank",
+      "addBlankGarment": "Add a blank garment"
+    },
+    "garmentDrawer": {
+      "close": "Close the catalog",
+      "loading": "Loading products…",
+      "line": "Line {{number}}",
+      "newBundle": {
+        "title": "Add product",
+        "sub": "Pick a garment from the catalog, then add art, sizes and pricing."
+      },
+      "addGarment": {
+        "title": "Add a garment to this card",
+        "sub": "Card {{number}} · Blank garments · {{brand}}. Each garment you pick joins the card and counts toward its minimum."
+      },
+      "addFailed": "The selected garments could not be added. They may be unavailable or missing a price. Try again.",
+      "catalog": "Garment catalog",
+      "addToCard": "Add {{count}} to card {{number}}",
+      "artLibrary": "Art library",
+      "art": {
+        "title": "Pick art",
+        "sub": "Line {{number}} · on {{garment}}. Render it with Create with AI after."
+      },
+      "artTag": "For {{brand}} garments",
+      "addToLine": "Add to Line {{number}}",
+      "artAddFailed": "The selected art could not be added. Try again."
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "table": {
+    "title": "Invoice Table",
+    "openAccountsReceivable": "Open AR"
+  },
+  "status": {
+    "paid": "Paid",
+    "overdue": "Overdue",
+    "due": "Due"
+  },
+  "header": {
+    "closeAriaLabel": "Close invoice",
+    "previousAriaLabel": "Previous invoice",
+    "nextAriaLabel": "Next invoice",
+    "position": "{{current}} of {{total}}"
+  },
+  "actionRail": {
+    "actionsHeading": "Actions",
+    "timelineHeading": "Timeline",
+    "printInvoice": {
+      "title": "Print invoice",
+      "description": "Letter-size, exactly as previewed"
+    },
+    "saveAsPdf": {
+      "title": "Save as PDF",
+      "description": "Opens print — choose \"Save as PDF\""
+    },
+    "emailToAp": {
+      "title": "Email to AP",
+      "description": "Sends to {{email}} · cc {{salesRep}}"
+    },
+    "copyLink": {
+      "title": "Copy link",
+      "description": "Deep link opens this exact invoice"
+    },
+    "openOrder": {
+      "title": "Open order {{orderNumber}}",
+      "description": "Jump to the source order"
+    },
+    "timeline": {
+      "issued": "Issued · emailed to {{email}}",
+      "netSuiteSync": "Synced from NetSuite · {{netSuiteRef}}",
+      "due": "Due · {{terms}}",
+      "paid": "Paid · {{method}} {{reference}}"
+    }
+  },
+  "paper": {
+    "companyName": "UNRIVALED",
+    "companyTagline": "TEAMWEAR",
+    "companyAddress": "2200 Merchant Way · Louisville, KY 40299",
+    "companyContact": "ar@unrivaledteamwear.com · (502) 555-0140",
+    "title": "INVOICE",
+    "issuedDue": "Issued {{issueDate}} · Due {{dueDate}}",
+    "meta": {
+      "customerNumber": "Customer #",
+      "poNumber": "PO number",
+      "order": "Order",
+      "netSuiteRef": "NetSuite ref",
+      "invoiceDate": "Invoice date",
+      "dueDate": "Due date",
+      "terms": "Terms",
+      "salesRep": "Sales rep"
+    },
+    "parties": {
+      "billTo": "Bill to",
+      "shipTo": "Ship to",
+      "remitTo": "Remit to"
+    },
+    "items": {
+      "item": "Item",
+      "sizeRun": "Size run",
+      "qty": "Qty",
+      "unit": "Unit",
+      "amount": "Amount"
+    },
+    "payment": {
+      "heading": "Payment",
+      "paymentsHeading": "Payments",
+      "salesTax": "Sales tax: {{rate}}.",
+      "record": "{{date}} · {{method}} {{reference}}"
+    },
+    "totals": {
+      "merchandise": "Merchandise",
+      "decoration": "Decoration",
+      "artSetup": "Art setup · digitizing",
+      "licensingRoyalty": "Licensing royalty · {{rate}}",
+      "discount": "Discount",
+      "freight": "Freight & handling",
+      "salesTax": "Sales tax · {{rate}}",
+      "invoiceTotal": "Invoice total",
+      "paymentsApplied": "Payments applied",
+      "balanceDue": "Balance due"
+    },
+    "footer": {
+      "note": "Thank you for building with Unrivaled Teamwear — decoration and licensing verified by production before anything ships.",
+      "questions": "Questions? {{salesRep}} · unrivaledteamwear.com"
+    }
+  }
+}
